@@ -2,14 +2,14 @@
 
 ForkChat 是一款“对话即流程图”的 AI 分支对话应用，支持桌面与 Android。
 
-## Android 0.1.3 测试版
+## Android 0.1.4 测试版
 
-[直接下载 APK](https://raw.githubusercontent.com/DarrellDai/ForkChat-Releases/gh-pages/downloads/ForkChat-0.1.3-android-debug.apk)
+[直接下载 APK](https://raw.githubusercontent.com/DarrellDai/ForkChat-Releases/gh-pages/downloads/ForkChat-0.1.4-android-debug.apk)
 
 - Android 7.0 及以上
-- 文件大小约 29 MB
+- 文件大小约 27 MB
 - Debug 签名
-- SHA-256：`8fec567ea058fdf05ebb2226b3982692617d2097d564be01b1ffbf07d507f00f`
+- SHA-256：`72909354d836905275c51b619b3996872d3a55f2350f518e067ccb3d3371d8e0`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
@@ -39,6 +39,6 @@ sudo apt install ./ForkChat-*-linux-amd64.deb
 当前安装包尚未购买代码签名证书。Windows 可能显示 SmartScreen 提示；macOS
 首次打开时，需要在“系统设置 → 隐私与安全性”中选择“仍要打开”。
 正式 Android APK 使用项目固定的发布密钥签名，可由后续版本直接覆盖升级；本页
-0.1.3 测试包使用 Debug 签名，不保证能覆盖其他签名的安装包。
+0.1.4 测试包使用 Debug 签名，不保证能覆盖其他签名的安装包。
 
 Release 中提供 SHA-256 校验信息；Android 另附同名 `.sha256` 文件。
