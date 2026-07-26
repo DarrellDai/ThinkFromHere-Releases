@@ -193,8 +193,7 @@
         line-height: 1.6;
       }
 
-      .download,
-      .unavailable {
+      .download {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -225,11 +224,6 @@
       .download:focus-visible {
         outline: 3px solid rgba(103, 232, 249, 0.35);
         outline-offset: 3px;
-      }
-
-      .unavailable {
-        color: #64748b;
-        background: rgba(51, 65, 85, 0.42);
       }
 
       .details {
@@ -353,42 +347,60 @@
 
       <section aria-labelledby="platform-title">
         <h2 id="platform-title">选择平台</h2>
-        <p class="section-copy">桌面端安装包正在准备中，Android 测试版现已开放下载。</p>
+        <p class="section-copy">Windows、macOS、Linux 和 Android 安装包现已开放下载。</p>
 
         <div class="platforms">
-          <article class="platform-card">
+          <article class="platform-card available">
             <div class="platform-icon" aria-hidden="true">WIN</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>Windows</h3>
-                <span class="status">准备中</span>
+                <span class="status">v0.1.2</span>
               </div>
-              <p class="platform-description">Windows 10/11 · x64 · EXE 安装程序</p>
-              <span class="unavailable" aria-label="Windows 安装包准备中">安装包准备中</span>
+              <p class="platform-description">Windows 10/11 · x64 · EXE · 约 102 MB</p>
+              <a
+                class="download"
+                href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.1.7/ThinkFromHere-0.1.2-windows-x64.exe"
+                download="ThinkFromHere-0.1.2-windows-x64.exe"
+              >
+                下载 Windows 安装包
+              </a>
             </div>
           </article>
 
-          <article class="platform-card">
+          <article class="platform-card available">
             <div class="platform-icon" aria-hidden="true">MAC</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>macOS</h3>
-                <span class="status">准备中</span>
+                <span class="status">v0.1.2</span>
               </div>
-              <p class="platform-description">Intel 与 Apple 芯片 · Universal DMG</p>
-              <span class="unavailable" aria-label="macOS 安装包准备中">安装包准备中</span>
+              <p class="platform-description">Intel 与 Apple 芯片 · Universal DMG · 约 222 MB</p>
+              <a
+                class="download"
+                href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.1.7/ThinkFromHere-0.1.2-macos-universal.dmg"
+                download="ThinkFromHere-0.1.2-macos-universal.dmg"
+              >
+                下载 macOS 安装包
+              </a>
             </div>
           </article>
 
-          <article class="platform-card">
+          <article class="platform-card available">
             <div class="platform-icon" aria-hidden="true">DEB</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>Linux</h3>
-                <span class="status">准备中</span>
+                <span class="status">v0.1.2</span>
               </div>
-              <p class="platform-description">Debian / Ubuntu / Mint · x64 · DEB</p>
-              <span class="unavailable" aria-label="Linux 安装包准备中">安装包准备中</span>
+              <p class="platform-description">Debian / Ubuntu / Mint · x64 · DEB · 约 103 MB</p>
+              <a
+                class="download"
+                href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.1.7/ThinkFromHere-0.1.2-linux-amd64.deb"
+                download="ThinkFromHere-0.1.2-linux-amd64.deb"
+              >
+                下载 Linux 安装包
+              </a>
             </div>
           </article>
 
@@ -399,11 +411,11 @@
                 <h3>Android</h3>
                 <span class="status">v0.1.7</span>
               </div>
-              <p class="platform-description">Android 7.0 或更高版本 · 约 27 MB · Debug 签名</p>
+              <p class="platform-description">Android 7.0 或更高版本 · 约 25 MB · Release 签名</p>
               <a
                 class="download"
-                href="downloads/ThinkFromHere-0.1.7-android-debug.apk"
-                download="ThinkFromHere-0.1.7-android-debug.apk"
+                href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.1.7/ThinkFromHere-0.1.7-android.apk"
+                download="ThinkFromHere-0.1.7-android.apk"
               >
                 下载 Android APK
               </a>
@@ -431,9 +443,9 @@
       </section>
 
       <div class="android-note">
-        Android 安装提示：下载后请按系统提示允许浏览器或文件管理器“安装未知应用”。如果旧版使用另一套签名，请先完成云同步或备份重要本机数据，再决定是否卸载旧版。
+        Android 安装提示：下载后请按系统提示允许浏览器或文件管理器“安装未知应用”。当前 APK 使用项目固定的 Release 密钥签名，后续版本可直接覆盖升级。
         <span class="checksum">
-          SHA-256：4d988424066f1bf4d62758b36b29d880339d9f8568db01e6e215b09c37b72b0e
+          SHA-256：40d80cdfc2759195c841ab906d60b353ce754d05df790b24b31b4634932bbee6
         </span>
       </div>
 
