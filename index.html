@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0f172a" />
+    <meta name="theme-color" content="#07101f" />
     <meta
       name="description"
-      content="下载 ThinkFromHere Android 测试版：把分支对话、画布和账号云同步装进口袋。"
+      content="下载 ThinkFromHere 的 Windows、macOS、Linux 和 Android 客户端。"
     />
-    <title>ThinkFromHere Android 下载</title>
+    <title>下载 ThinkFromHere</title>
     <style>
       :root {
         color-scheme: dark;
         font-family:
           Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif;
-        background: #07101f;
         color: #f8fafc;
+        background: #07101f;
+        font-synthesis: none;
       }
 
       * {
@@ -24,6 +25,7 @@
       }
 
       body {
+        min-width: 320px;
         min-height: 100vh;
         margin: 0;
         background:
@@ -32,23 +34,18 @@
           #07101f;
       }
 
-      a {
-        color: inherit;
-      }
-
       main {
-        width: min(100% - 32px, 960px);
+        width: min(100% - 32px, 1040px);
         margin: 0 auto;
-        padding: 40px 0 64px;
+        padding: 32px 0 64px;
       }
 
       .topbar {
         display: flex;
         align-items: center;
         gap: 12px;
-        margin-bottom: 64px;
         color: #cbd5e1;
-        font-weight: 700;
+        font-weight: 750;
         letter-spacing: 0.02em;
       }
 
@@ -59,10 +56,9 @@
       }
 
       .hero {
-        display: grid;
-        grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-        gap: 44px;
-        align-items: center;
+        max-width: 790px;
+        margin: 88px auto 0;
+        text-align: center;
       }
 
       .eyebrow {
@@ -72,69 +68,150 @@
         padding: 7px 11px;
         border: 1px solid rgba(34, 211, 238, 0.28);
         border-radius: 999px;
-        background: rgba(8, 145, 178, 0.1);
         color: #67e8f9;
+        background: rgba(8, 145, 178, 0.1);
         font-size: 13px;
-        font-weight: 700;
+        font-weight: 750;
       }
 
       h1 {
-        max-width: 720px;
-        margin: 20px 0 18px;
-        font-size: clamp(42px, 8vw, 76px);
-        line-height: 0.98;
+        margin: 22px 0 18px;
+        font-size: clamp(44px, 8vw, 76px);
+        line-height: 1;
         letter-spacing: -0.055em;
       }
 
+      .title-prefix {
+        margin-right: 0.18em;
+      }
+
       .lead {
-        max-width: 650px;
-        margin: 0;
+        max-width: 680px;
+        margin: 0 auto;
         color: #94a3b8;
         font-size: clamp(17px, 2.7vw, 21px);
         line-height: 1.75;
       }
 
-      .download-card {
-        padding: 24px;
-        border: 1px solid rgba(148, 163, 184, 0.18);
-        border-radius: 24px;
-        background: rgba(15, 23, 42, 0.78);
-        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
-        backdrop-filter: blur(18px);
+      h2 {
+        margin: 72px 0 8px;
+        font-size: 27px;
+        letter-spacing: -0.025em;
       }
 
-      .version-row {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
+      .section-copy {
+        margin: 0;
+        color: #64748b;
+        font-size: 14px;
+      }
+
+      .platforms {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
-        margin-bottom: 18px;
+        margin-top: 24px;
       }
 
-      .version {
-        font-size: 28px;
-        font-weight: 800;
+      .platform-card {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 18px;
+        min-height: 198px;
+        padding: 24px;
+        overflow: hidden;
+        border: 1px solid rgba(148, 163, 184, 0.16);
+        border-radius: 22px;
+        background: rgba(15, 23, 42, 0.62);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(16px);
       }
 
-      .size,
-      .requirements {
+      .platform-card.available {
+        border-color: rgba(34, 211, 238, 0.34);
+        background:
+          linear-gradient(135deg, rgba(8, 145, 178, 0.1), transparent 56%),
+          rgba(15, 23, 42, 0.76);
+      }
+
+      .platform-icon {
+        display: grid;
+        width: 52px;
+        height: 52px;
+        place-items: center;
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 15px;
+        color: #e2e8f0;
+        background: rgba(30, 41, 59, 0.86);
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+
+      .available .platform-icon {
+        color: #082f49;
+        background: #67e8f9;
+      }
+
+      .platform-content {
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+      }
+
+      .platform-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .platform-heading h3 {
+        margin: 2px 0 0;
+        font-size: 20px;
+      }
+
+      .status {
+        flex: none;
+        padding: 5px 8px;
+        border-radius: 999px;
+        color: #94a3b8;
+        background: rgba(100, 116, 139, 0.12);
+        font-size: 11px;
+        font-weight: 750;
+      }
+
+      .available .status {
+        color: #67e8f9;
+        background: rgba(8, 145, 178, 0.15);
+      }
+
+      .platform-description {
+        margin: 10px 0 20px;
         color: #94a3b8;
         font-size: 13px;
+        line-height: 1.6;
       }
 
-      .download {
+      .download,
+      .unavailable {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        min-height: 54px;
-        padding: 0 20px;
-        border-radius: 14px;
-        background: #22d3ee;
+        min-height: 44px;
+        margin-top: auto;
+        padding: 0 16px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 850;
+      }
+
+      .download {
         color: #082f49;
-        font-weight: 900;
+        background: #22d3ee;
+        box-shadow: 0 14px 34px rgba(34, 211, 238, 0.16);
         text-decoration: none;
-        box-shadow: 0 16px 40px rgba(34, 211, 238, 0.2);
         transition:
           transform 150ms ease,
           background 150ms ease;
@@ -145,86 +222,61 @@
         background: #67e8f9;
       }
 
-      .requirements {
-        margin: 14px 0 0;
-        text-align: center;
+      .download:focus-visible {
+        outline: 3px solid rgba(103, 232, 249, 0.35);
+        outline-offset: 3px;
       }
 
-      .features,
-      .steps {
+      .unavailable {
+        color: #64748b;
+        background: rgba(51, 65, 85, 0.42);
+      }
+
+      .details {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
-        margin-top: 56px;
+        margin-top: 24px;
       }
 
-      .feature,
-      .step,
-      .checksum {
+      .detail {
         padding: 22px;
-        border: 1px solid rgba(148, 163, 184, 0.14);
+        border: 1px solid rgba(148, 163, 184, 0.13);
         border-radius: 18px;
-        background: rgba(15, 23, 42, 0.48);
+        background: rgba(15, 23, 42, 0.46);
       }
 
-      .feature strong,
-      .step strong {
+      .detail strong {
         display: block;
         margin-bottom: 8px;
         color: #e2e8f0;
       }
 
-      .feature p,
-      .step p {
+      .detail p {
         margin: 0;
         color: #94a3b8;
         font-size: 14px;
         line-height: 1.65;
       }
 
-      h2 {
-        margin: 64px 0 18px;
-        font-size: 25px;
-      }
-
-      .steps {
-        margin-top: 0;
-      }
-
-      .step-number {
-        display: inline-grid;
-        width: 28px;
-        height: 28px;
-        margin-bottom: 18px;
-        place-items: center;
-        border-radius: 9px;
-        background: rgba(34, 211, 238, 0.12);
-        color: #67e8f9;
+      .android-note {
+        margin-top: 24px;
+        padding: 17px 19px;
+        border-left: 3px solid #fbbf24;
+        border-radius: 11px;
+        color: #cbd5e1;
+        background: rgba(251, 191, 36, 0.08);
         font-size: 13px;
-        font-weight: 900;
+        line-height: 1.7;
       }
 
       .checksum {
-        margin-top: 16px;
-      }
-
-      .checksum code {
         display: block;
+        margin-top: 8px;
         overflow-wrap: anywhere;
-        color: #cbd5e1;
-        font-size: 12px;
-        line-height: 1.7;
-      }
-
-      .notice {
-        margin-top: 16px;
-        padding: 16px 18px;
-        border-left: 3px solid #fbbf24;
-        border-radius: 10px;
-        background: rgba(251, 191, 36, 0.08);
-        color: #cbd5e1;
-        font-size: 13px;
-        line-height: 1.7;
+        color: #94a3b8;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 11px;
       }
 
       footer {
@@ -239,22 +291,34 @@
           padding-top: 24px;
         }
 
-        .topbar {
-          margin-bottom: 40px;
-        }
-
         .hero {
-          grid-template-columns: 1fr;
-          gap: 32px;
+          margin-top: 58px;
         }
 
-        .features,
-        .steps {
+        .platforms,
+        .details {
           grid-template-columns: 1fr;
         }
 
         h1 {
-          font-size: clamp(44px, 15vw, 64px);
+          font-size: clamp(42px, 12.5vw, 52px);
+          line-height: 1.04;
+        }
+
+        .title-prefix {
+          display: block;
+          margin: 0 0 4px;
+        }
+      }
+
+      @media (max-width: 440px) {
+        .platform-card {
+          grid-template-columns: 1fr;
+        }
+
+        .platform-icon {
+          width: 46px;
+          height: 46px;
         }
       }
     </style>
@@ -280,73 +344,97 @@
       </div>
 
       <section class="hero">
-        <div>
-          <span class="eyebrow">Android 测试版 · 已内置 DeepSeek</span>
-          <h1>把分支对话<br />装进口袋</h1>
-          <p class="lead">
-            在手机上继续你的画布、分支与长期记忆。内置 DeepSeek
-            无需填写 API Key，用户添加的 Key 仍可随账号安全同步。
-          </p>
+        <span class="eyebrow">在你的设备上继续思考</span>
+        <h1><span class="title-prefix">下载</span><span>ThinkFromHere</span></h1>
+        <p class="lead">
+          一张画布，连接每一次分支思考。选择你的平台，随时继续对话、画布与长期记忆。
+        </p>
+      </section>
+
+      <section aria-labelledby="platform-title">
+        <h2 id="platform-title">选择平台</h2>
+        <p class="section-copy">桌面端安装包正在准备中，Android 测试版现已开放下载。</p>
+
+        <div class="platforms">
+          <article class="platform-card">
+            <div class="platform-icon" aria-hidden="true">WIN</div>
+            <div class="platform-content">
+              <div class="platform-heading">
+                <h3>Windows</h3>
+                <span class="status">准备中</span>
+              </div>
+              <p class="platform-description">Windows 10/11 · x64 · EXE 安装程序</p>
+              <span class="unavailable" aria-label="Windows 安装包准备中">安装包准备中</span>
+            </div>
+          </article>
+
+          <article class="platform-card">
+            <div class="platform-icon" aria-hidden="true">MAC</div>
+            <div class="platform-content">
+              <div class="platform-heading">
+                <h3>macOS</h3>
+                <span class="status">准备中</span>
+              </div>
+              <p class="platform-description">Intel 与 Apple 芯片 · Universal DMG</p>
+              <span class="unavailable" aria-label="macOS 安装包准备中">安装包准备中</span>
+            </div>
+          </article>
+
+          <article class="platform-card">
+            <div class="platform-icon" aria-hidden="true">DEB</div>
+            <div class="platform-content">
+              <div class="platform-heading">
+                <h3>Linux</h3>
+                <span class="status">准备中</span>
+              </div>
+              <p class="platform-description">Debian / Ubuntu / Mint · x64 · DEB</p>
+              <span class="unavailable" aria-label="Linux 安装包准备中">安装包准备中</span>
+            </div>
+          </article>
+
+          <article class="platform-card available">
+            <div class="platform-icon" aria-hidden="true">APK</div>
+            <div class="platform-content">
+              <div class="platform-heading">
+                <h3>Android</h3>
+                <span class="status">v0.1.7</span>
+              </div>
+              <p class="platform-description">Android 7.0 或更高版本 · 约 27 MB · Debug 签名</p>
+              <a
+                class="download"
+                href="downloads/ThinkFromHere-0.1.7-android-debug.apk"
+                download="ThinkFromHere-0.1.7-android-debug.apk"
+              >
+                下载 Android APK
+              </a>
+            </div>
+          </article>
         </div>
+      </section>
 
-        <div class="download-card">
-          <div class="version-row">
-            <span class="version">v0.1.7</span>
-            <span class="size">约 27 MB</span>
-          </div>
-          <a
-            class="download"
-            href="downloads/ThinkFromHere-0.1.7-android-debug.apk"
-            download="ThinkFromHere-0.1.7-android-debug.apk"
-          >
-            下载 Android APK
-          </a>
-          <p class="requirements">Android 7.0 或更高版本 · Debug 签名</p>
+      <section aria-labelledby="why-title">
+        <h2 id="why-title">从一台设备，到每一处思考</h2>
+        <div class="details">
+          <article class="detail">
+            <strong>分支对话画布</strong>
+            <p>从任意节点继续，不丢失当前路径上的上下文。</p>
+          </article>
+          <article class="detail">
+            <strong>跨设备同步</strong>
+            <p>登录同一账号，继续你的画布、设置与长期记忆。</p>
+          </article>
+          <article class="detail">
+            <strong>内置 DeepSeek</strong>
+            <p>安装后即可开始使用，也可以添加自己的模型服务。</p>
+          </article>
         </div>
       </section>
 
-      <section class="features" aria-label="主要功能">
-        <article class="feature">
-          <strong>适配折叠屏</strong>
-          <p>外屏点击方框显示全屏详情，展开内屏后自动切换为 Canvas 与详情双栏。</p>
-        </article>
-        <article class="feature">
-          <strong>内置 DeepSeek</strong>
-          <p>安装后即可使用，无需创建 Provider 或填写自己的 API Key。</p>
-        </article>
-        <article class="feature">
-          <strong>Key 不回显</strong>
-          <p>下载到手机后进入系统安全存储，界面与 API adapter 均不提供读取入口。</p>
-        </article>
-      </section>
-
-      <h2>三步安装</h2>
-      <section class="steps" aria-label="安装步骤">
-        <article class="step">
-          <span class="step-number">1</span>
-          <strong>下载 APK</strong>
-          <p>点击上面的下载按钮，等待浏览器完成下载。</p>
-        </article>
-        <article class="step">
-          <span class="step-number">2</span>
-          <strong>允许未知应用</strong>
-          <p>按系统提示允许当前浏览器或文件管理器安装未知应用。</p>
-        </article>
-        <article class="step">
-          <span class="step-number">3</span>
-          <strong>打开并安装</strong>
-          <p>点击下载记录中的 APK，确认安装即可。</p>
-        </article>
-      </section>
-
-      <div class="checksum">
-        <strong>SHA-256</strong>
-        <code>4d988424066f1bf4d62758b36b29d880339d9f8568db01e6e215b09c37b72b0e</code>
-      </div>
-
-      <div class="notice">
-        这是 Debug 签名测试包。如果手机上的旧版本使用另一套签名，Android
-        不允许直接覆盖安装。请先完成云同步或备份重要本机数据，再决定是否卸载旧版。
+      <div class="android-note">
+        Android 安装提示：下载后请按系统提示允许浏览器或文件管理器“安装未知应用”。如果旧版使用另一套签名，请先完成云同步或备份重要本机数据，再决定是否卸载旧版。
+        <span class="checksum">
+          SHA-256：4d988424066f1bf4d62758b36b29d880339d9f8568db01e6e215b09c37b72b0e
+        </span>
       </div>
 
       <footer>ThinkFromHere · 从这里开始思考</footer>

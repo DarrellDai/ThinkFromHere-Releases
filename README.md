@@ -2,7 +2,12 @@
 
 ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支持桌面、Android 与 iOS。
 
-## 首个版本：Android 0.1.7 测试版
+## 下载平台
+
+下载页现已列出 Windows、macOS、Linux 和 Android。Android 0.1.7 测试版现已开放下载；
+三个桌面平台会在公开安装包上传后启用对应的下载按钮。
+
+## Android 0.1.7 测试版
 
 [前往首个 Release 下载 APK](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.1.7)
 
@@ -24,7 +29,7 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 ## 发布页
 
 [Latest Release](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/latest)
-目前提供 Android 0.1.7 测试包。
+目前提供 Android 0.1.7 测试包；Windows、macOS 和 Linux 安装包正在准备中。
 
 ## 安全提示
 
