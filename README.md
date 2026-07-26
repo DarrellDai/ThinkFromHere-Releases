@@ -4,24 +4,26 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 下载平台
 
-下载页提供 Windows、macOS、Linux 和 Android 安装包：
+下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.2 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.2 Universal DMG
-- Linux x64：ThinkFromHere 0.1.2 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.9 Release APK
+- Windows x64：ThinkFromHere 0.1.3 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.3 Universal DMG
+- Linux x64：ThinkFromHere 0.1.3 DEB
+- Android 7.0 及以上：ThinkFromHere 0.1.13 Release APK
+- iOS：ThinkFromHere 0.1.13 未签名模拟器 ZIP
 
-## Android 0.1.9
+## Android 0.1.13
 
 - Android 7.0 及以上
 - 文件大小约 25 MB
 - 项目固定 Release 密钥签名
-- SHA-256：`54e064a9068b43a7f31371d5f9bbcabb2133e25651bb24936e807f9d2a46c413`
+- SHA-256：`6c08a0cc72e25a7d374687397deb09d05fd0934aef9b96807ad05c237a6f0da9`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
-Android Keystore 加密保存，且不会在界面回显。现在还内置 DeepSeek，无需用户填写
-API Key；手机端点击方框只显示详情，不会自动弹出软键盘，明确点击输入框后才会开始输入。
+Android Keystore 加密保存，且不会在界面回显。当前版本内置 OpenAI、Claude、豆包及
+多款国产模型，无需用户填写 API Key；国产模型也支持联网检索。手机端点击方框只显示详情，
+不会自动弹出软键盘，明确点击输入框后才会开始输入。
 Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外屏点击方框显示全屏详情，
 展开内屏点击方框后会自动隐藏 Canvas 列表及展开箭头，只保留 Canvas 与详情；关闭详情后
 恢复展开箭头，列表保持收起。键盘弹出时也会自动收起左栏，避免详情与 Canvas 重叠。
@@ -29,10 +31,15 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 下载后，请允许浏览器或文件管理器“安装未知应用”，再打开 APK 安装。当前 APK 使用项目
 固定的 Release 密钥签名，后续正式版本可直接覆盖升级。
 
+## iOS 0.1.13
+
+当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
+不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
+
 ## 发布页
 
 [Latest Release](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/latest)
-目前提供 Windows、macOS、Linux 和 Android 四个平台的安装包及 SHA-256 校验文件。
+目前提供 Windows、macOS、Linux、Android 和 iOS 模拟器五个平台构建及 SHA-256 校验文件。
 
 ## 安全提示
 
