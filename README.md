@@ -1,10 +1,10 @@
-# ForkChat Downloads
+# ThinkFromHere Downloads
 
-ForkChat 是一款“对话即流程图”的 AI 分支对话应用，支持桌面与 Android。
+ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支持桌面、Android 与 iOS。
 
 ## Android 0.1.7 测试版
 
-[直接下载 APK](https://raw.githubusercontent.com/DarrellDai/ForkChat-Releases/main/downloads/ForkChat-0.1.7-android-debug.apk)
+[直接下载 APK](https://darrelldai.github.io/ThinkFromHere-Releases/downloads/ThinkFromHere-0.1.7-android-debug.apk)
 
 - Android 7.0 及以上
 - 文件大小约 27 MB
@@ -23,18 +23,18 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 
 ## 正式发布
 
-前往 [Latest Release](https://github.com/DarrellDai/ForkChat-Releases/releases/latest)
+前往 [Latest Release](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/latest)
 下载对应平台的安装包：
 
-- Windows x64：`ForkChat-*-windows-x64.exe`
-- Linux x64（Debian / Ubuntu / Mint）：`ForkChat-*-linux-amd64.deb`
-- macOS（Intel + Apple Silicon）：`ForkChat-*-macos-universal.dmg`
-- Android 7.0 及以上：`ForkChat-*-android.apk`
+- Windows x64：`ThinkFromHere-*-windows-x64.exe`
+- Linux x64（Debian / Ubuntu / Mint）：`ThinkFromHere-*-linux-amd64.deb`
+- macOS（Intel + Apple Silicon）：`ThinkFromHere-*-macos-universal.dmg`
+- Android 7.0 及以上：`ThinkFromHere-*-android.apk`
 
 Linux 安装命令：
 
 ```bash
-sudo apt install ./ForkChat-*-linux-amd64.deb
+sudo apt install ./ThinkFromHere-*-linux-amd64.deb
 ```
 
 ## 安全提示
