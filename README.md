@@ -16,7 +16,7 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 - Android 7.0 及以上
 - 文件大小约 25 MB
 - 项目固定 Release 密钥签名
-- SHA-256：`40d80cdfc2759195c841ab906d60b353ce754d05df790b24b31b4634932bbee6`
+- SHA-256：`c4ebdf2d222cd695eb5c15f844a853e15cb7148c8f8ed87bce24e7c8302aac3d`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
