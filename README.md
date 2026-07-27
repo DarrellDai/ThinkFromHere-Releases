@@ -6,23 +6,24 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.9 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.9 Universal DMG
-- Linux x64：ThinkFromHere 0.1.9 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.18 Release APK
-- iOS：ThinkFromHere 0.1.18 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere 0.1.10 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.10 Universal DMG
+- Linux x64：ThinkFromHere 0.1.10 DEB
+- Android 7.0 及以上：ThinkFromHere 0.1.19 Release APK
+- iOS：ThinkFromHere 0.1.19 未签名模拟器 ZIP
 
-## Android 0.1.18
+## Android 0.1.19
 
 - Android 7.0 及以上
 - 文件大小约 25 MB
 - 项目固定 Release 密钥签名
-- SHA-256：`23cd71feba1a173029f114528fbace09c272c05209d9e9ed6d5cff007d93d28a`
+- SHA-256：`221b7003daab9cfc7b7651146d3645546156cfc81c410a14e59ea0dedebd9083`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
 Android Keystore 加密保存，且不会在界面回显。当前版本内置 OpenAI、Claude、豆包、
-DeepSeek V4 和 GLM 5.2，无需用户填写 API Key；国产模型也支持联网检索。多个发布编号
+DeepSeek V4 和 GLM 5.2，无需用户填写 API Key；国产模型使用单次非流式请求，避免空回复
+并减少等待时间，开启联网时再额外执行一次检索。多个发布编号
 会折叠为一个模型名称，模型列表只显示当前 Provider 的模型。火山公共目录中存在但当前
 账号无法调用的旧模型不会再显示。手机端点击方框只显示详情，不会自动弹出
 软键盘，明确点击输入框后才会开始输入。
@@ -30,7 +31,7 @@ DeepSeek V4 和 GLM 5.2，无需用户填写 API Key；国产模型也支持联�
 默认登录入口已改用证书稳定的 Cloudflare Pages 域名，以兼容更多企业网络。
 登录、云同步、附件和内置模型服务现在统一通过该入口访问，避免企业网络单独拦截
 `*.supabase.co` 导致“同步失败”。
-桌面 0.1.9 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
+桌面 0.1.10 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
 自动重新加密恢复；无法恢复时只要求重新输入对应 Key，不再阻断画布和设置同步。
 Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外屏点击方框显示全屏详情，
 展开内屏点击方框后会自动隐藏 Canvas 列表及展开箭头，只保留 Canvas 与详情；关闭详情后
@@ -39,15 +40,16 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 下载后，请允许浏览器或文件管理器“安装未知应用”，再打开 APK 安装。当前 APK 使用项目
 固定的 Release 密钥签名，后续正式版本可直接覆盖升级。
 
-## iOS 0.1.18
+## iOS 0.1.19
 
 当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
 不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
-SHA-256：`ec1f1234c73ce2d4f2f22e2995d4e2e45037905230d870ea781fbc574f70d2d6`
+SHA-256：`90b19a2799aa9ba260368087ab78ad1aec4ea48ba85da83e546ac57b055f4a9e`
 
-Linux 0.1.9 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
+Linux 0.1.10 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
 ThinkFromHere，并会在安装时替换旧的 `forkchat-desktop` 包。Windows 与 macOS 也使用
-同一套 ThinkFromHere 图标资源。
+同一套 ThinkFromHere 图标资源。Ubuntu 启动时会清理旧版重复创建的登录 URL Handler，
+浏览器登录只保留一个 ThinkFromHere 入口。
 
 ## 发布页
 
