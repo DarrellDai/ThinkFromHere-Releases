@@ -9,20 +9,21 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 - Windows x64：ThinkFromHere 0.1.7 EXE 安装程序
 - macOS Intel + Apple Silicon：ThinkFromHere 0.1.7 Universal DMG
 - Linux x64：ThinkFromHere 0.1.7 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.16 Release APK
+- Android 7.0 及以上：ThinkFromHere 0.1.17 Release APK
 - iOS：ThinkFromHere 0.1.16 未签名模拟器 ZIP
 
-## Android 0.1.16
+## Android 0.1.17
 
 - Android 7.0 及以上
 - 文件大小约 25 MB
 - 项目固定 Release 密钥签名
-- SHA-256：`4bb1bb35531fbe5ba68b60d69520d66c9f944d265e46674357224dbf472d2c43`
+- SHA-256：`4412c5a53e9d763f881253ee907bc7d738f8ec18c65d2d330db7d4e518470bd3`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
-Android Keystore 加密保存，且不会在界面回显。当前版本内置 OpenAI、Claude、豆包及
-多款国产模型，无需用户填写 API Key；国产模型也支持联网检索。手机端点击方框时会同时
+Android Keystore 加密保存，且不会在界面回显。当前版本内置 OpenAI、Claude、豆包、
+DeepSeek V4 和 GLM 5.2，无需用户填写 API Key；国产模型也支持联网检索。火山公共目录
+中存在但当前账号无法调用的旧模型不会再显示。手机端点击方框时会同时
 显示详情和底部输入框，不再需要额外点击“从这里继续聊”。
 首次启动默认使用系统语言；此后登录页和登录验证邮件跟随 App 内选择的语言。
 默认登录入口已改用证书稳定的 Cloudflare Pages 域名，以兼容更多企业网络。
