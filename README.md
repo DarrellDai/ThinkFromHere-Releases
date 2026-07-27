@@ -10,7 +10,7 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 - macOS Intel + Apple Silicon：ThinkFromHere 0.1.7 Universal DMG
 - Linux x64：ThinkFromHere 0.1.7 DEB
 - Android 7.0 及以上：ThinkFromHere 0.1.17 Release APK
-- iOS：ThinkFromHere 0.1.16 未签名模拟器 ZIP
+- iOS：ThinkFromHere 0.1.17 未签名模拟器 ZIP
 
 ## Android 0.1.17
 
@@ -37,10 +37,11 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 下载后，请允许浏览器或文件管理器“安装未知应用”，再打开 APK 安装。当前 APK 使用项目
 固定的 Release 密钥签名，后续正式版本可直接覆盖升级。
 
-## iOS 0.1.16
+## iOS 0.1.17
 
 当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
 不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
+SHA-256：`8469a604a107599630e35586a4b68935f8d41e1a98db3adcbdb6d610cc43324f`
 
 Linux 0.1.7 的 DEB 包名、安装摘要、应用菜单和可执行文件均已统一为
 ThinkFromHere，并会在安装时替换旧的 `forkchat-desktop` 包。
