@@ -6,9 +6,9 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.6 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.6 Universal DMG
-- Linux x64：ThinkFromHere 0.1.6 DEB
+- Windows x64：ThinkFromHere 0.1.7 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.7 Universal DMG
+- Linux x64：ThinkFromHere 0.1.7 DEB
 - Android 7.0 及以上：ThinkFromHere 0.1.16 Release APK
 - iOS：ThinkFromHere 0.1.16 未签名模拟器 ZIP
 
@@ -28,6 +28,8 @@ Android Keystore 加密保存，且不会在界面回显。当前版本内置 Op
 默认登录入口已改用证书稳定的 Cloudflare Pages 域名，以兼容更多企业网络。
 登录、云同步、附件和内置模型服务现在统一通过该入口访问，避免企业网络单独拦截
 `*.supabase.co` 导致“同步失败”。
+桌面 0.1.7 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
+自动重新加密恢复；无法恢复时只要求重新输入对应 Key，不再阻断画布和设置同步。
 Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外屏点击方框显示全屏详情，
 展开内屏点击方框后会自动隐藏 Canvas 列表及展开箭头，只保留 Canvas 与详情；关闭详情后
 恢复展开箭头，列表保持收起。键盘弹出时也会自动收起左栏，避免详情与 Canvas 重叠。
@@ -40,7 +42,7 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
 不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
 
-Linux 0.1.6 的 DEB 包名、安装摘要、应用菜单和可执行文件均已统一为
+Linux 0.1.7 的 DEB 包名、安装摘要、应用菜单和可执行文件均已统一为
 ThinkFromHere，并会在安装时替换旧的 `forkchat-desktop` 包。
 
 ## 发布页
