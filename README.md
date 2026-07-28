@@ -6,18 +6,18 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.17 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.17 Universal DMG
-- Linux x64：ThinkFromHere 0.1.17 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.26 Release APK
-- iOS：ThinkFromHere 0.1.26 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere 0.1.18 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.18 Universal DMG
+- Linux x64：ThinkFromHere 0.1.18 DEB
+- Android 7.0 及以上：ThinkFromHere 0.1.27 Release APK
+- iOS：ThinkFromHere 0.1.27 未签名模拟器 ZIP
 
-## Android 0.1.26
+## Android 0.1.27
 
 - Android 7.0 及以上
 - 文件大小约 25 MB
 - 项目固定 Release 密钥签名
-- SHA-256：`1ef1f690fde35d7b58e5e13d26298c90f51d25c60a91a0a0fefa3404a6182280`
+- SHA-256：`7c95b18ee7100071f57c255a93836fdb12a6e999e45dd1a00ef5c691a1de5bab`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
@@ -34,7 +34,7 @@ Responses 流式搜索，在 WebView 流式连接不可用时仍会自动可靠�
 默认登录入口已改用证书稳定的 Cloudflare Pages 域名，以兼容更多企业网络。
 登录、云同步、附件和内置模型服务现在统一通过该入口访问，避免企业网络单独拦截
 `*.supabase.co` 导致“同步失败”。
-桌面 0.1.17 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
+桌面 0.1.18 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
 自动重新加密恢复；无法恢复时只要求重新输入对应 Key，不再阻断画布和设置同步。
 Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外屏点击方框显示全屏详情，
 展开内屏后显示 Canvas 与详情双栏；边缘箭头可以隐藏或恢复画布列表。
@@ -45,17 +45,21 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 目录请求失败时继续使用最后一次成功结果，不再退回只到 GPT-5.2 的旧列表。同步刷新、
 快速终态和流式增量同时发生时，画布方框不再闪烁、消失或被空状态覆盖；深思内容框的
 展开状态也会在当前轮与历史路径之间保持稳定。
+本次更新会按画布恢复缩放与位置、上次打开的方框、详情宽度和字体缩放，并按方框恢复
+阅读滚动位置；上次使用的模型也会通过账号同步到其他平台。详情面板支持在触屏上继续
+向左拉宽，全屏时真正铺满窗口。生成回复期间及完成后，当前方框会持续留在画布上，
+不会因同步或终态更新而永久消失。
 
 下载后，请允许浏览器或文件管理器“安装未知应用”，再打开 APK 安装。当前 APK 使用项目
 固定的 Release 密钥签名，后续正式版本可直接覆盖升级。
 
-## iOS 0.1.26
+## iOS 0.1.27
 
 当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
 不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
-SHA-256：`d630b51736d0b52c8021a1ea0f86a796580174c92497a709806c4c5c9bf7ef3d`
+SHA-256：`850c38cccf359a51c58f0f0c927816581544056024de66edbc55c63e35b2a5d3`
 
-Linux 0.1.17 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
+Linux 0.1.18 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
 ThinkFromHere，并会在安装时替换旧的 `forkchat-desktop` 包。Windows 与 macOS 也使用
 同一套 ThinkFromHere 图标资源。Ubuntu 安装时会刷新图标缓存，应用菜单与 Dock 都能
 正确显示 Logo；启动时还会清理旧版重复创建的登录 URL Handler。桌面触摸板的两指滑动
