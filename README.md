@@ -4,11 +4,18 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 当前版本
 
-- Windows x64：ThinkFromHere Desktop 0.1.25 EXE
-- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.25 Universal DMG
-- Linux x64：ThinkFromHere Desktop 0.1.25 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.34 Release APK
-- iOS：ThinkFromHere 0.1.34 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere Desktop 0.1.27 EXE
+- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.27 Universal DMG
+- Linux x64：ThinkFromHere Desktop 0.1.27 DEB
+- Android 7.0 及以上：ThinkFromHere 0.1.36 Release APK
+- iOS：ThinkFromHere 0.1.36 未签名模拟器 ZIP
+
+## 本次更新（Desktop 0.1.27 / Mobile 0.1.36）
+
+- Android 与 iOS 新增图片和 PDF 附件，可直接通过系统选择器添加，并随对话保存与同步。
+- 移动端聊天框移入卡片详情并重排工具栏；发送与停止共用一个按钮，输入区贴底且在宽屏保持合理宽度。
+- 卡片改为长按后拖动并提供轻微震动提示；折叠屏的详情、侧栏与返回导航更稳定。
+- 修复关闭 App 后需要重复登录；OpenAI 回复改为更平滑的流式增量展示，触屏联网开关也更可靠。
 
 本次版本加入应用内更新功能：应用启动和打开设置时会自动检查最新公开版本；桌面版会在
 下载后验证安装包大小与 SHA-256，再打开系统安装器。Android 会打开新版 APK 下载，
