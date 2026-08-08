@@ -6,18 +6,18 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.27 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.27 Universal DMG
-- Linux x64：ThinkFromHere 0.1.27 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.37 Release APK
-- iOS：ThinkFromHere 0.1.37 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere 0.1.28 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.28 Universal DMG
+- Linux x64：ThinkFromHere 0.1.28 DEB / 免管理员权限 TAR.GZ
+- Android 7.0 及以上：ThinkFromHere 0.1.38 Release APK
+- iOS：ThinkFromHere 0.1.38 未签名模拟器 ZIP
 
-## Android 0.1.37
+## Android 0.1.38
 
 - Android 7.0 及以上
 - 文件大小约 25 MB
 - 项目固定 Release 密钥签名
-- SHA-256：`574b2b5b8a9e99132fc0f68c5162cae5ff5fda9bbd07a4e7fb8c02d556cbf824`
+- SHA-256：`6f066ace3e9212d908fe04f9895fd4389276df69fb76f2088a9d6d04c82a7ecc`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
@@ -34,7 +34,7 @@ Responses 流式搜索，在 WebView 流式连接不可用时仍会自动可靠�
 默认登录入口已改用证书稳定的 Cloudflare Pages 域名，以兼容更多企业网络。
 登录、云同步、附件和内置模型服务现在统一通过该入口访问，避免企业网络单独拦截
 `*.supabase.co` 导致“同步失败”。
-桌面 0.1.27 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
+桌面 0.1.28 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
 自动重新加密恢复；无法恢复时只要求重新输入对应 Key，不再阻断画布和设置同步。
 Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外屏点击方框显示全屏详情，
 展开内屏后显示 Canvas 与详情双栏；边缘箭头可以隐藏或恢复画布列表。
@@ -55,20 +55,22 @@ Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外�
 提示，折叠屏导航更稳定。关闭 App 后会保持登录，OpenAI 回复会以更平滑的增量展示，
 触屏联网开关也更可靠。
 
-Mobile 0.1.37 进一步修复 Android 强制关闭、后台回收或重新打开 App 后反复要求登录：
-登录凭据会在安全存储确认落盘后再返回成功，冷启动时短暂的 Keystore、SQLite 或 token
-刷新异常会自动重试且不会删除原会话。旧版若已经丢失登录状态，升级后需再登录一次。
+Desktop 0.1.28 / Mobile 0.1.38 将附件入口改为图片、PDF、arXiv 与 Codebase 下拉菜单，
+桌面和移动端都可连接公开 Git 仓库。一个子方框生成时，仍能从母方框或其他已完成方框
+并行提问；移动端打开方框详情后也始终保留画布列表入口。数学公式不再出现文字光标竖线，
+“生成中”会在最终内容完成绘制后再消失。桌面应用内更新改用免管理员权限的安装方式，
+避免安装完成后仍停留在下载校验状态。
 
 下载后，请允许浏览器或文件管理器“安装未知应用”，再打开 APK 安装。当前 APK 使用项目
 固定的 Release 密钥签名，后续正式版本可直接覆盖升级。
 
-## iOS 0.1.37
+## iOS 0.1.38
 
 当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
 不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
-SHA-256：`8ddb3ac24519b976e9da2480bc0e63f1e8c213d01fb569efd7475d76480ab10f`
+SHA-256：`b789594f1dd256739242610c06413548d71f48b844d103c91c079f121c1a75b7`
 
-Linux 0.1.27 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
+Linux 0.1.28 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
 ThinkFromHere，并会在安装时替换旧的 `forkchat-desktop` 包。Windows 与 macOS 也使用
 同一套 ThinkFromHere 图标资源。Ubuntu 安装时会刷新图标缓存，应用菜单与 Dock 都能
 正确显示 Logo；启动时还会清理旧版重复创建的登录 URL Handler。桌面触摸板的两指滑动
