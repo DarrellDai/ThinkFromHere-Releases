@@ -6,18 +6,24 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.30 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.30 Universal DMG
-- Linux x64：ThinkFromHere 0.1.30 DEB / 免管理员权限 TAR.GZ
-- Android 7.0 及以上：ThinkFromHere 0.1.40 Release APK
-- iOS：ThinkFromHere 0.1.40 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere 0.1.31 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.31 Universal DMG
+- Linux x64：ThinkFromHere 0.1.31 DEB / 免管理员权限 TAR.GZ
+- Android 7.0 及以上：ThinkFromHere 0.1.41 Release APK
+- iOS：ThinkFromHere 0.1.41 未签名模拟器 ZIP
 
-## Android 0.1.40
+## 本次更新（Desktop 0.1.31 / Mobile 0.1.41）
+
+- 桌面端和 iPad 从方框详情发送后，会立即显示并跟随新生成的子方框，不再需要返回 Canvas 查找。
+- Android 折叠窄屏与 iPhone 在详情中隐藏列表箭头；Android 展开屏与 iPad 保留列表入口，打开列表时不会关闭当前详情。
+- 第一个根方框生成完成后不再显示紫色新内容边框；子方框仍保留完成提示。
+
+## Android 0.1.41
 
 - Android 7.0 及以上
 - 文件大小约 25 MB
 - 项目固定 Release 密钥签名
-- SHA-256：`ec10c5a01d343223372e71b8e3112cf3b6a003e09dc3b3ad4e03d52253b1fc2f`
+- SHA-256：`26f01695d33a35d7152a94273483c8ea34a0e7815e1ec1b168ae3ea2a7248493`
 
 当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
 以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
@@ -70,11 +76,11 @@ Android 仍可完整选择图片、PDF、arXiv 和 Codebase。
 下载后，请允许浏览器或文件管理器“安装未知应用”，再打开 APK 安装。当前 APK 使用项目
 固定的 Release 密钥签名，后续正式版本可直接覆盖升级。
 
-## iOS 0.1.40
+## iOS 0.1.41
 
 当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
 不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
-SHA-256：`fda8ee5f537e739be556d7bea970f82f510fef654661cfbfa23557e3f33da395`
+SHA-256：`f4532c01e3eb4485c9a5e22ce06489730e8c41988cf0c449cedf4dcd59392c1c`
 
 Linux 0.1.30 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
 ThinkFromHere，并会在安装时替换旧的 `forkchat-desktop` 包。Windows 与 macOS 也使用
