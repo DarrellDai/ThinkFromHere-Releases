@@ -4,18 +4,18 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 当前版本
 
-- Windows x64：ThinkFromHere Desktop 0.1.28 EXE
-- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.28 Universal DMG
-- Linux x64：ThinkFromHere Desktop 0.1.28 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.38 Release APK
-- iOS：ThinkFromHere 0.1.38 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere Desktop 0.1.30 EXE
+- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.30 Universal DMG
+- Linux x64：ThinkFromHere Desktop 0.1.30 DEB
+- Android 7.0 及以上：ThinkFromHere 0.1.40 Release APK
+- iOS：ThinkFromHere 0.1.40 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.28 / Mobile 0.1.38）
+## 本次更新（Desktop 0.1.30 / Mobile 0.1.40）
 
-- 附件入口改为图片、PDF、arXiv 与 Codebase 下拉菜单；桌面端和移动端均支持公开 Git 仓库。
-- 子方框生成时，仍可从母方框或其他已完成方框并行提问。
-- 移动端方框详情保留画布列表入口，生成状态与公式显示也更加稳定。
-- 桌面应用内更新改用免管理员权限方式，并修复安装完成后仍停在下载校验状态的问题。
+- 桌面、Android 与 iOS 会持久保存并正确刷新 OAuth 会话，重启或令牌到期后不再反复登录。
+- Android 应用内更新完成后会正确打开安装流程；移动端联网开关重新开启时立即显示完整启用状态。
+- 从方框详情发送后会立即显示并跟随新子方框；iPad 横竖屏、宽屏与 Stage Manager 均保持当前详情。
+- iPad、iPhone 与 Android 的附件菜单会按软键盘上方空间限高并滚动，所有附件选项都可访问。
 
 本次版本加入应用内更新功能：应用启动和打开设置时会自动检查最新公开版本；桌面版会在
 下载后验证安装包大小与 SHA-256，再打开系统安装器。Android 会打开新版 APK 下载，
