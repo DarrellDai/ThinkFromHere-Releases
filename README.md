@@ -4,17 +4,17 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 当前版本
 
-- Windows x64：ThinkFromHere Desktop 0.1.33 EXE
-- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.33 Universal DMG
-- Linux x64：ThinkFromHere Desktop 0.1.33 DEB / TAR.GZ
-- Android 7.0 及以上：ThinkFromHere 0.1.43 Release APK
-- iOS：ThinkFromHere 0.1.43 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere Desktop 0.1.34 EXE
+- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.34 Universal DMG
+- Linux x64：ThinkFromHere Desktop 0.1.34 DEB / TAR.GZ
+- Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
+- iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.33 / Mobile 0.1.43）
+## 本次更新（Desktop 0.1.34 / Mobile 0.1.44）
 
-- 每个 Session 可独立开启图片解释；模型会在真正有助于理解时检索相关真实图片，在正文合适位置展示来源和完整注释，默认保持关闭。
-- 方框新增空白卡片与按内容需要进行分解的快捷操作；从详情发送后会立即跟随新方框，停止生成也会更快响应。
-- App 会等待本地状态恢复后再显示 Canvas，避免移动端启动时闪入模型选择页；在线 Codebase 在 macOS 路径别名下也能安全读取。
+- 桌面端新增 Codex Agent 模式，可连接本机 Codex CLI 与账号，在聊天框内选择 Codex 模型和推理强度，并把每个方框作为独立执行分支。
+- Agent 会展示推理说明、命令与文件操作进度；停止、异常断连和审批都有明确终态，已生成内容会保留，工作区也会安全释放。
+- 默认仅允许工作区写入并按需审批，也支持只读与显式确认后的完全访问。Codex Agent 当前仅支持桌面端，移动端会稳定拒绝误发的 Agent 请求。
 
 本次版本加入应用内更新功能：应用启动和打开设置时会自动检查最新公开版本；桌面版会在
 下载后验证安装包大小与 SHA-256，再打开系统安装器。Android 会打开新版 APK 下载，
