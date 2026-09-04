@@ -4,17 +4,17 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 当前版本
 
-- Windows x64：ThinkFromHere Desktop 0.1.31 EXE
-- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.31 Universal DMG
-- Linux x64：ThinkFromHere Desktop 0.1.31 DEB
-- Android 7.0 及以上：ThinkFromHere 0.1.41 Release APK
-- iOS：ThinkFromHere 0.1.41 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere Desktop 0.1.33 EXE
+- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.33 Universal DMG
+- Linux x64：ThinkFromHere Desktop 0.1.33 DEB / TAR.GZ
+- Android 7.0 及以上：ThinkFromHere 0.1.43 Release APK
+- iOS：ThinkFromHere 0.1.43 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.31 / Mobile 0.1.41）
+## 本次更新（Desktop 0.1.33 / Mobile 0.1.43）
 
-- 桌面端和 iPad 从方框详情发送后，会立即显示并跟随新生成的子方框，不再需要返回 Canvas 查找。
-- Android 折叠窄屏与 iPhone 在详情中隐藏列表箭头；Android 展开屏与 iPad 保留列表入口，打开列表时不会关闭当前详情。
-- 第一个根方框生成完成后不再显示紫色新内容边框；子方框仍保留完成提示。
+- 每个 Session 可独立开启图片解释；模型会在真正有助于理解时检索相关真实图片，在正文合适位置展示来源和完整注释，默认保持关闭。
+- 方框新增空白卡片与按内容需要进行分解的快捷操作；从详情发送后会立即跟随新方框，停止生成也会更快响应。
+- App 会等待本地状态恢复后再显示 Canvas，避免移动端启动时闪入模型选择页；在线 Codebase 在 macOS 路径别名下也能安全读取。
 
 本次版本加入应用内更新功能：应用启动和打开设置时会自动检查最新公开版本；桌面版会在
 下载后验证安装包大小与 SHA-256，再打开系统安装器。Android 会打开新版 APK 下载，
