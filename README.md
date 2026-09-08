@@ -6,13 +6,21 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.34 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.34 Universal DMG
-- Linux x64：ThinkFromHere 0.1.34 DEB / 免管理员权限 TAR.GZ
+- Windows x64：ThinkFromHere 0.1.36 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.36 Universal DMG
+- Linux x64：ThinkFromHere 0.1.36 DEB / 免管理员权限 TAR.GZ
 - Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
 - iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.34 / Mobile 0.1.44）
+## 本次更新（Desktop 0.1.36 / Mobile 0.1.44）
+
+- 桌面本地数据库与附件加密存储。
+- 支持复用 Codex CLI 登录，以及只读查看已有会话、分页与已归档记录。
+- 修复 Ubuntu 上部分 Node 管理器安装的 Codex 无法找到的问题。
+- 修复 Linux 更新包识别错误，下载与安装均显示进度。旧版本若仍无法自动安装，请手动下载本次安装包。
+- 修复 macOS 通用包的加密数据库原生模块打包。Android 与 iOS 本次保持 0.1.44 不变。
+
+## 上次更新（Desktop 0.1.34 / Mobile 0.1.44）
 
 - 桌面端新增 Codex Agent 模式，可连接本机 Codex CLI 与账号，在聊天框内选择 Codex 模型和推理强度，并把每个方框作为独立执行分支。
 - Agent 会展示推理说明、命令与文件操作进度；停止、异常断连和审批都有明确终态，已生成内容会保留，工作区也会安全释放。
