@@ -6,13 +6,21 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.40 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.40 Universal DMG
-- Linux x64：ThinkFromHere 0.1.40 DEB / 免管理员权限 TAR.GZ
+- Windows x64：ThinkFromHere 0.1.41 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.41 Universal DMG
+- Linux x64：ThinkFromHere 0.1.41 DEB / 免管理员权限 TAR.GZ
 - Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
 - iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.40 / Mobile 0.1.44）
+## 本次更新（Desktop 0.1.41 / Mobile 0.1.44）
+
+- Codex 历史按轮次与消息分页读取，支持忽略大小写的会话标题搜索；转换画布保留原轮次用于续聊。
+- 工作目录默认使用上次目录，没有记录时使用 Home；修复目录登记失效及下拉选项为空的问题。
+- 修复重复启动时窗口早于同步接口注册的问题；更新下载显示真实百分比，安装显示阶段及动态进度条。
+- 对话结束或需要输入时支持内容通知和提示音，可分别关闭；隔离 Warp 终端通知环境变量。
+- Android 与 iOS 保持 0.1.44。旧 Linux 更新器若仍报应用文件缺失，请手动安装新版一次。
+
+## 上次更新（Desktop 0.1.40 / Mobile 0.1.44）
 
 - Chat / Codex 提问弹窗作为可选功能，默认关闭；支持选项和自由回答，2 分钟未回答自动跳过，不影响权限审批。
 - Codex 工作目录在会话开始时选择一次并记住上次选择，后续仅在首个节点显示；调整 Session 入口位置，删除重复状态。
