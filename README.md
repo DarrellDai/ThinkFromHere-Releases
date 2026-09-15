@@ -6,13 +6,21 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.46 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.46 Universal DMG
-- Linux x64：ThinkFromHere 0.1.46 DEB / 免管理员权限 TAR.GZ
+- Windows x64：ThinkFromHere 0.1.47 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.47 Universal DMG
+- Linux x64：ThinkFromHere 0.1.47 DEB / 免管理员权限 TAR.GZ
 - Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
 - iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.46 / Mobile 0.1.44）
+## 本次更新（Desktop 0.1.47 / Mobile 0.1.44）
+
+- Codex 每个 Session 独立保存权限模式与思考程度，切换会话后恢复，不修改 CLI 全局配置。
+- CLI 连接也会清理没有方框引用的应用分支；保护仍被引用或导入的会话，执行中延后清理。
+- 新消息成功发送后自动清除上一轮残留的 Codex 追加输入错误提示。
+- 卡片详情右下角新增透明的跳到底部按钮。
+- Android 与 iOS 安装包保持 0.1.44。
+
+## 上次更新（Desktop 0.1.46 / Mobile 0.1.44）
 
 - 新画布首次发送即从输入生成短名称，用户手动改名优先。
 - Ctrl+Enter 排队消息增加取消按钮，不影响当前执行。
