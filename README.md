@@ -4,13 +4,22 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 当前版本
 
-- Windows x64：ThinkFromHere Desktop 0.1.47 EXE
-- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.47 Universal DMG
-- Linux x64：ThinkFromHere Desktop 0.1.47 DEB / TAR.GZ
+- Windows x64：ThinkFromHere Desktop 0.1.51 EXE
+- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.51 Universal DMG
+- Linux x64：ThinkFromHere Desktop 0.1.51 DEB / TAR.GZ
 - Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
 - iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.47 / Mobile 0.1.44）
+## 本次更新（Desktop 0.1.51 / Mobile 0.1.44）
+
+- 修复生成回复时向上滚动被自动拉回底部；主动下滑到底部或点击向下按钮后恢复跟随。
+- Chat 支持 DOCX / XLSX / PPTX 直接解析，修复带批注 Excel 读取错误；旧 DOC / XLS / PPT 不支持。
+- Codex 拖入任意本地文件只插入路径，复制图片仍作为图片发送。
+- 更新模型目录与思考档位；新画布首次发送后才保存，Chat 不再继承 Codex 工作目录。
+- 修复公式渲染，并优化大型画布和流式回复性能。
+- Android 与 iOS 安装包保持 0.1.44。
+
+## 上次更新（Desktop 0.1.47 / Mobile 0.1.44）
 
 - Codex 每个 Session 独立保存权限模式与思考程度，切换会话后恢复，不修改 CLI 全局配置。
 - CLI 连接也会清理没有方框引用的应用分支；保护仍被引用或导入的会话，执行中延后清理。
