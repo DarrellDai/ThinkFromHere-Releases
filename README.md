@@ -6,13 +6,28 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.47 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.47 Universal DMG
-- Linux x64：ThinkFromHere 0.1.47 DEB / 免管理员权限 TAR.GZ
+- Windows x64：ThinkFromHere 0.1.51 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.51 Universal DMG
+- Linux x64：ThinkFromHere 0.1.51 DEB / 免管理员权限 TAR.GZ
 - Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
 - iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.47 / Mobile 0.1.44）
+## 本次更新（Desktop 0.1.51 / Mobile 0.1.44）
+
+- 修复生成回复时向上滚动被自动拉回底部；主动下滑到底部或点击向下按钮后恢复跟随。
+- Chat 新增 DOCX / XLSX / PPTX 直接解析，支持拖入文件或附件菜单选择；旧版 DOC / XLS / PPT 不支持。
+- 修复带批注 Excel 的读取错误；Office 解析期间阻止提前发送，切换对话后不添加到新对话。
+- Codex 拖入任意本地文件时只插入路径，复制图片仍作为图片发送。
+- 更新模型目录：加入 GPT-6 Astra、Claude Fable 5.1、Gemini 3.8 / 3.7 Flash，并匹配各自支持的思考档位。
+- 新画布发送第一句话后才加入列表，离开未发送的草稿不会留下空画布。
+- Codex 工作目录与 Chat 目录附件独立保存，切换到 Chat 不再自动继承目录。
+- 修复公式外框变竖线、上下标错位：统一 KaTeX 渲染器与样式版本。
+- 大画布仅渲染可视区域的方框与连线，编辑和触屏拖拽时保留必要状态。
+- 全部方框已有固定位置时跳过自动布局，减少重复计算。
+- 缓存历史 Markdown 和回复，降低流式输出的渲染开销。
+- Android 与 iOS 安装包保持 0.1.44，本次修复将在后续移动端发版中提供。
+
+## 上次更新（Desktop 0.1.47 / Mobile 0.1.44）
 
 - Codex 每个 Session 独立保存权限模式与思考程度，切换会话后恢复，不修改 CLI 全局配置。
 - CLI 连接也会清理没有方框引用的应用分支；保护仍被引用或导入的会话，执行中延后清理。
