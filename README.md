@@ -4,14 +4,15 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 当前版本
 
-- Windows x64：ThinkFromHere Desktop 0.1.51 EXE
-- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.51 Universal DMG
-- Linux x64：ThinkFromHere Desktop 0.1.51 DEB / TAR.GZ
+- Windows x64：ThinkFromHere Desktop 0.1.52 EXE
+- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.52 Universal DMG
+- Linux x64：ThinkFromHere Desktop 0.1.52 DEB / TAR.GZ
 - Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
 - iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.51 / Mobile 0.1.44）
+## 本次更新（Desktop 0.1.52 / Mobile 0.1.44）
 
+- 修复金额中的美元符号被误识别为公式，导致英文空格消失、显示及复制内容异常。
 - 修复生成回复时向上滚动被自动拉回底部；主动下滑到底部或点击向下按钮后恢复跟随。
 - Chat 支持 DOCX / XLSX / PPTX 直接解析，修复带批注 Excel 读取错误；旧 DOC / XLS / PPT 不支持。
 - Codex 拖入任意本地文件只插入路径，复制图片仍作为图片发送。
