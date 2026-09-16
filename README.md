@@ -6,13 +6,21 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.52 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.52 Universal DMG
-- Linux x64：ThinkFromHere 0.1.52 DEB / 免管理员权限 TAR.GZ
+- Windows x64：ThinkFromHere 0.1.53 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.1.53 Universal DMG
+- Linux x64：ThinkFromHere 0.1.53 DEB / 免管理员权限 TAR.GZ
 - Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
 - iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.52 / Mobile 0.1.44）
+## 本次更新（Desktop 0.1.53 / Mobile 0.1.44）
+
+- 修复 Agent 发送后丢失工作目录状态、发送按钮变灰的问题。
+- 已开始的会话固定 Chat / Codex Agent 模式，仅未开始的对话可切换；导入会话同样锁定。
+- 卡片详情右下角新增透明的到当前卡片顶部按钮，不跳到 root。
+- 每次启动自动后台刷新模型目录，失败保留缓存，不覆盖当前模型选择。
+- 移动端安装包保持 0.1.44。本次不包含尚在调查的 Linux 更新重启问题修复。
+
+## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
 
 - 修复金额中的美元符号被误识别为公式，导致英文空格消失、显示及复制内容异常。
 - 修复生成回复时向上滚动被自动拉回底部；主动下滑到底部或点击向下按钮后恢复跟随。
