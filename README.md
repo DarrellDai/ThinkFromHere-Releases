@@ -4,19 +4,26 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 ## 当前版本
 
-- Windows x64：ThinkFromHere Desktop 0.1.54 EXE
-- macOS Intel + Apple Silicon：ThinkFromHere Desktop 0.1.54 Universal DMG
-- Linux x64：ThinkFromHere Desktop 0.1.54 DEB / TAR.GZ
-- Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
-- iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
+桌面版 **0.1.62** · Android **0.1.51 (151)** · iOS **0.1.51 (151) 模拟器测试包**
 
-## 本次更新（Desktop 0.1.54 / Mobile 0.1.44）
+### 安装与数据目录
 
-- 修复 Agent 发送后丢失工作目录状态、发送按钮变灰的问题。
-- 已开始的会话固定 Chat / Codex Agent 模式，仅未开始的对话可切换；导入会话同样锁定。
-- 卡片详情右下角新增透明的到当前卡片顶部按钮，不跳到 root。
-- 每次启动自动后台刷新模型目录，失败保留缓存，不覆盖当前模型选择。
-- 移动端安装包保持 0.1.44。本次不包含尚在调查的 Linux 更新重启问题修复。
+- 桌面、Android 和 iOS 统一使用应用标识 `com.darrelldai.thinkfromhere`。
+- 桌面发布版配置目录改为 `thinkfromhere`（Linux：`~/.config/thinkfromhere`），开发版使用 `thinkfromhere-dev`。
+- 数据库文件名改为 `thinkfromhere.db`；Android 原生数据库使用 `thinkfromhere` 名称。
+- **本版本按全新安装处理，不自动迁移旧目录或数据库。旧文件不会删除。** 更换应用标识后，旧安装不能保证直接覆盖更新，请安装新版本并登录。
+- iOS ZIP 仅用于 Mac 上的 iOS 模拟器，不是能直接安装到 iPhone/iPad 的签名安装包。
+
+### 更新内容
+
+- 手机和电脑双向同步消息；电脑空闲时也会检查手机的新消息，手机发送后立即请求上传。
+- 卡片已读状态跨设备同步：回答完成后保持未读，点击卡片、详情或聊天框后才标为已读。
+- 画布列表紫色提示与未读卡片保持一致；已读同步独立于附件传输，修复空设置值阻塞手机同步的问题。
+- Android 接入离线推送；手机设置增加“接收电脑消息通知”，默认关闭。
+- 手机和 iPad 无论屏幕宽度如何，均需长按约 0.45 秒后才能拖动方框；支持的设备提供轻震反馈，直接滑动只移动画布。
+
+登录网页自动关闭的代码已完成，但登录网页尚未重新部署，因此该项尚未在线生效。
+
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
 
