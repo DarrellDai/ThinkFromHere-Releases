@@ -226,6 +226,19 @@
         outline-offset: 3px;
       }
 
+      .checksum-link {
+        margin-top: 10px;
+        color: #94a3b8;
+        font-size: 11px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .checksum-link:hover {
+        color: #67e8f9;
+        text-decoration: underline;
+      }
+
       .details {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -338,10 +351,10 @@
       </div>
 
       <section class="hero">
-        <span class="eyebrow">在你的设备上继续思考</span>
+        <span class="eyebrow">0.2.8 · 修复本机会话续聊</span>
         <h1><span class="title-prefix">下载</span><span>ThinkFromHere</span></h1>
         <p class="lead">
-          一张画布，连接每一次分支思考。选择你的平台，随时继续对话、画布与长期记忆。
+          修复本机 Codex 会话无法继续发送和目录提示异常，改善手机图片上传与可收起的补充问题表单。
         </p>
       </section>
 
@@ -350,14 +363,14 @@
         <p class="section-copy">Windows、macOS、Linux、Android 和 iOS 模拟器版本现已开放下载。</p>
 
         <div class="platforms">
-          <article class="platform-card available">
+          <article class="platform-card available" data-platform="windows">
             <div class="platform-icon" aria-hidden="true">WIN</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>Windows</h3>
                 <span class="status">v0.2.8</span>
               </div>
-              <p class="platform-description">Windows 10/11 · x64 · EXE</p>
+              <p class="platform-description">Windows 10/11 · x64 · EXE · 约 112 MB</p>
               <a
                 class="download"
                 href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-windows-x64.exe"
@@ -374,14 +387,14 @@
             </div>
           </article>
 
-          <article class="platform-card available">
+          <article class="platform-card available" data-platform="macos">
             <div class="platform-icon" aria-hidden="true">MAC</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>macOS</h3>
                 <span class="status">v0.2.8</span>
               </div>
-              <p class="platform-description">Intel 与 Apple 芯片 · Universal DMG</p>
+              <p class="platform-description">Intel 与 Apple 芯片 · Universal DMG · 约 231 MB</p>
               <a
                 class="download"
                 href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-macos-universal.dmg"
@@ -398,14 +411,14 @@
             </div>
           </article>
 
-          <article class="platform-card available">
+          <article class="platform-card available" data-platform="linux">
             <div class="platform-icon" aria-hidden="true">DEB</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>Linux</h3>
                 <span class="status">v0.2.8</span>
               </div>
-              <p class="platform-description">Debian / Ubuntu / Mint · x64 · DEB</p>
+              <p class="platform-description">Debian / Ubuntu / Mint · x64 · DEB · 约 113 MB</p>
               <a
                 class="download"
                 href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-linux-amd64.deb"
@@ -422,14 +435,14 @@
             </div>
           </article>
 
-          <article class="platform-card available">
+          <article class="platform-card available" data-platform="android">
             <div class="platform-icon" aria-hidden="true">APK</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>Android</h3>
                 <span class="status">v0.2.8</span>
               </div>
-              <p class="platform-description">Android 7.0 或更高版本 · Release 签名</p>
+              <p class="platform-description">Android 7.0 或更高版本 · 约 26 MB · Release 签名</p>
               <a
                 class="download"
                 href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-android.apk"
@@ -437,18 +450,23 @@
               >
                 下载 Android APK
               </a>
-              <a class="checksum-link" href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-android.apk.sha256">SHA-256 校验文件</a>
+              <a
+                class="checksum-link"
+                href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-android.apk.sha256"
+              >
+                SHA-256 校验文件
+              </a>
             </div>
           </article>
 
-          <article class="platform-card available">
+          <article class="platform-card available" data-platform="ios">
             <div class="platform-icon" aria-hidden="true">iOS</div>
             <div class="platform-content">
               <div class="platform-heading">
                 <h3>iOS 模拟器</h3>
                 <span class="status">v0.2.8</span>
               </div>
-              <p class="platform-description">macOS 上的 iPhone Simulator · 未签名 ZIP</p>
+              <p class="platform-description">macOS 上的 iPhone Simulator · 未签名 ZIP · 约 7 MB</p>
               <a
                 class="download"
                 href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-ios-simulator.zip"
@@ -456,7 +474,12 @@
               >
                 下载 iOS 模拟器版本
               </a>
-              <a class="checksum-link" href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-ios-simulator.zip.sha256">SHA-256 校验文件</a>
+              <a
+                class="checksum-link"
+                href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.2.8/ThinkFromHere-0.2.8-ios-simulator.zip.sha256"
+              >
+                SHA-256 校验文件
+              </a>
             </div>
           </article>
         </div>
@@ -466,32 +489,94 @@
         <h2 id="why-title">从一台设备，到每一处思考</h2>
         <div class="details">
           <article class="detail">
-            <strong>桌面加入 Codex Agent</strong>
-            <p>连接本机 Codex CLI 与账号，直接选择模型和推理强度，让每个方框成为执行分支。</p>
+            <strong>手机远控 Codex</strong>
+            <p>登录同一账号，在手机卡片详情继续电脑会话，或选择在线电脑新建 Codex Session。</p>
           </article>
           <article class="detail">
-            <strong>权限由你掌控</strong>
-            <p>默认仅写入工作区并按需审批；只读、免打扰和完全访问均有明确安全边界。</p>
+            <strong>每轮设置，随手调整</strong>
+            <p>手机可调整模型、权限与思考程度，支持追加、排队、停止和回答模型提问。账号授权与权限审批在电脑完成。</p>
           </article>
           <article class="detail">
-            <strong>执行过程可追踪</strong>
-            <p>推理说明、命令和文件活动实时可见；停止或断连后保留结果并可靠清理工作区。</p>
+            <strong>账号隔离，通知独立</strong>
+            <p>手机切换账号保留各自数据；电脑与手机分别设置 Chat / Codex 通知同步，默认开启。</p>
           </article>
         </div>
       </section>
 
       <div class="android-note">
-        Android 安装提示：下载后请按系统提示允许浏览器或文件管理器“安装未知应用”。当前 APK 使用项目固定的 Release 密钥签名，后续版本可直接覆盖升级。
-        <span class="checksum">
-          SHA-256：见各安装包对应的校验文件
-        </span>
+        0.2.8 远控需要电脑运行新版 ThinkFromHere，并与手机登录同一云账号。电脑欢迎界面可直接选择 CLI 登录或独立 Codex 账号登录。
+      </div>
+
+      <div class="android-note">
+        Android 安装提示：下载后请按系统提示允许浏览器或文件管理器“安装未知应用”。当前 APK 使用项目固定的 Release 密钥签名。应用标识统一为 com.darrelldai.thinkfromhere，旧包名用户需重新安装。
+        <span class="checksum">每个平台均提供独立的 SHA-256 校验文件。</span>
       </div>
 
       <div class="android-note">
         iOS 说明：当前提供的是未签名的模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，不能直接安装到 iPhone 真机。
       </div>
 
-      <footer>ThinkFromHere · 从这里开始思考</footer>
+      <footer>
+        ThinkFromHere · 从这里开始思考 ·
+        <a class="checksum-link" href="https://github.com/DarrellDai/ThinkFromHere-Releases/releases/latest">
+          最新发布页
+        </a>
+      </footer>
     </main>
+    <script>
+      (() => {
+        const releaseApi =
+          "https://api.github.com/repos/DarrellDai/ThinkFromHere-Releases/releases/latest";
+        const patterns = {
+          windows: /^ThinkFromHere-(\d+\.\d+\.\d+)-windows-x64\.exe$/,
+          macos: /^ThinkFromHere-(\d+\.\d+\.\d+)-macos-universal\.dmg$/,
+          linux: /^ThinkFromHere-(\d+\.\d+\.\d+)-linux-amd64\.deb$/,
+          android: /^ThinkFromHere-(\d+\.\d+\.\d+)-android\.apk$/,
+          ios: /^ThinkFromHere-(\d+\.\d+\.\d+)-ios-simulator\.zip$/,
+        };
+
+        fetch(releaseApi, {
+          headers: {
+            Accept: "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+          },
+        })
+          .then((response) => {
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return response.json();
+          })
+          .then((release) => {
+            const assets = Array.isArray(release.assets) ? release.assets : [];
+            document.querySelectorAll("[data-platform]").forEach((card) => {
+              const platform = card.dataset.platform;
+              const pattern = patterns[platform];
+              if (!pattern) return;
+              const asset = assets.find(
+                (candidate) =>
+                  typeof candidate.name === "string" && pattern.test(candidate.name),
+              );
+              if (!asset) return;
+              const version = pattern.exec(asset.name)?.[1];
+              const download = card.querySelector(".download");
+              const status = card.querySelector(".status");
+              const checksum = card.querySelector(".checksum-link");
+              const checksumAsset = assets.find(
+                (candidate) => candidate.name === `${asset.name}.sha256`,
+              );
+              if (status && version) status.textContent = `v${version}`;
+              if (download) {
+                download.href = asset.browser_download_url;
+                download.download = asset.name;
+              }
+              if (checksum && checksumAsset) {
+                checksum.href = checksumAsset.browser_download_url;
+              }
+            });
+          })
+          .catch((error) => {
+            console.warn("自动读取最新发布失败，继续使用页面内置下载链接。", error);
+          });
+      })();
+    </script>
   </body>
 </html>
