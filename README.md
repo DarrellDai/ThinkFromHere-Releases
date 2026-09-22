@@ -6,13 +6,25 @@ ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支�
 
 下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
 
-- Windows x64：ThinkFromHere 0.1.54 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.1.54 Universal DMG
-- Linux x64：ThinkFromHere 0.1.54 DEB / 免管理员权限 TAR.GZ
-- Android 7.0 及以上：ThinkFromHere 0.1.44 Release APK
-- iOS：ThinkFromHere 0.1.44 未签名模拟器 ZIP
+- Windows x64：ThinkFromHere 0.2.8 EXE 安装程序
+- macOS Intel + Apple Silicon：ThinkFromHere 0.2.8 Universal DMG
+- Linux x64：ThinkFromHere 0.2.8 DEB / 免管理员权限 TAR.GZ
+- Android 7.0 及以上：ThinkFromHere 0.2.8 Release APK
+- iOS：ThinkFromHere 0.2.8 未签名模拟器 ZIP
 
-## 本次更新（Desktop 0.1.54 / Mobile 0.1.44）
+## 本次更新（0.2.8）
+
+ThinkFromHere 0.2.8 修复本机会话无法继续发送，并改善跨设备图片和补充问题交互。
+
+- 修复本机 Codex 会话被误判为远程、发送时错误提示重新选择工作目录的问题；核实本地记录后恢复会话绑定和原目录。
+- 修复 Linux 开发环境下本地会话自动恢复进程启动失败。
+- 修复手机向远程 Codex 发送图片时上传数据损坏的问题。
+- 补充问题表单默认开启，可收起、切换对话，并通过通知返回对应问题；保留用户已保存的关闭设置。
+- 包含 0.2.7 的手机远程图片上传、未读收件箱和连续删除卡片改进。
+
+[下载最新版本](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.8)
+
+## 上次更新（Desktop 0.1.54 / Mobile 0.1.44）
 
 - 修复 Agent 发送后丢失工作目录状态、发送按钮变灰的问题。
 - 已开始的会话固定 Chat / Codex Agent 模式，仅未开始的对话可切换；导入会话同样锁定。
