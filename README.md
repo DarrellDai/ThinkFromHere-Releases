@@ -1,52 +1,35 @@
 # ThinkFromHere Downloads
 
-ThinkFromHere 是一款“对话即流程图”的 AI 分支对话应用，支持桌面、Android 与 iOS。
+桌面版 **0.2.13** · Android **0.2.13 (213)** · iOS **0.2.13 (213) 模拟器测试包**
 
-## 下载平台
+## 本次更新
 
-下载页提供 Windows、macOS、Linux、Android 和 iOS 模拟器构建：
+- 修复远程图片和 PDF 上传的云端兼容问题；执行电脑需要更新到支持文件上传的版本。
+- 明确区分云端校验失败和执行电脑版本过旧的提示。
 
-- Windows x64：ThinkFromHere 0.2.8 EXE 安装程序
-- macOS Intel + Apple Silicon：ThinkFromHere 0.2.8 Universal DMG
-- Linux x64：ThinkFromHere 0.2.8 DEB / 免管理员权限 TAR.GZ
-- Android 7.0 及以上：ThinkFromHere 0.2.8 Release APK
-- iOS：ThinkFromHere 0.2.8 未签名模拟器 ZIP
+- 修复 Android 对话生成文件无法获取下载地址的问题，使用系统保存窗口保存并校验文件。
+- 长按文件或图片显示下载按钮；图片轻点放大，支持双指缩放，移除图片下方的下载链接。
+- 关闭图片预览或按 Android 返回键回到原卡片，不关闭卡片。
+- 缓存已加载的图片预览，减少重新打开卡片时的重复加载；切换账号时清空缓存。
+- Windows 安装器直接启动新安装的应用，启动失败时显示提示。
 
-## 本次更新（0.2.8）
+## 下载与升级
 
-ThinkFromHere 0.2.8 修复本机会话无法继续发送，并改善跨设备图片和补充问题交互。
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.13 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.13)
 
-- 修复本机 Codex 会话被误判为远程、发送时错误提示重新选择工作目录的问题；核实本地记录后恢复会话绑定和原目录。
-- 修复 Linux 开发环境下本地会话自动恢复进程启动失败。
-- 修复手机向远程 Codex 发送图片时上传数据损坏的问题。
-- 补充问题表单默认开启，可收起、切换对话，并通过通知返回对应问题；保留用户已保存的关闭设置。
-- 包含 0.2.7 的手机远程图片上传、未读收件箱和连续删除卡片改进。
-
-[下载最新版本](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.8)
-
-## 上次更新（Desktop 0.1.54 / Mobile 0.1.44）
-
-- 修复 Agent 发送后丢失工作目录状态、发送按钮变灰的问题。
-- 已开始的会话固定 Chat / Codex Agent 模式，仅未开始的对话可切换；导入会话同样锁定。
-- 卡片详情右下角新增透明的到当前卡片顶部按钮，不跳到 root。
-- 每次启动自动后台刷新模型目录，失败保留缓存，不覆盖当前模型选择。
-- 移动端安装包保持 0.1.44。本次不包含尚在调查的 Linux 更新重启问题修复。
+- Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
+- Android 使用固定 Release 签名和 versionCode 213，可覆盖升级同签名正式版；开发版独立安装。
+- iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
 
 - 修复金额中的美元符号被误识别为公式，导致英文空格消失、显示及复制内容异常。
 - 修复生成回复时向上滚动被自动拉回底部；主动下滑到底部或点击向下按钮后恢复跟随。
-- Chat 新增 DOCX / XLSX / PPTX 直接解析，支持拖入文件或附件菜单选择；旧版 DOC / XLS / PPT 不支持。
-- 修复带批注 Excel 的读取错误；Office 解析期间阻止提前发送，切换对话后不添加到新对话。
-- Codex 拖入任意本地文件时只插入路径，复制图片仍作为图片发送。
-- 更新模型目录：加入 GPT-6 Astra、Claude Fable 5.1、Gemini 3.8 / 3.7 Flash，并匹配各自支持的思考档位。
-- 新画布发送第一句话后才加入列表，离开未发送的草稿不会留下空画布。
-- Codex 工作目录与 Chat 目录附件独立保存，切换到 Chat 不再自动继承目录。
-- 修复公式外框变竖线、上下标错位：统一 KaTeX 渲染器与样式版本。
-- 大画布仅渲染可视区域的方框与连线，编辑和触屏拖拽时保留必要状态。
-- 全部方框已有固定位置时跳过自动布局，减少重复计算。
-- 缓存历史 Markdown 和回复，降低流式输出的渲染开销。
-- Android 与 iOS 安装包保持 0.1.44，本次修复将在后续移动端发版中提供。
+- Chat 支持 DOCX / XLSX / PPTX 直接解析，修复带批注 Excel 读取错误；旧 DOC / XLS / PPT 不支持。
+- Codex 拖入任意本地文件只插入路径，复制图片仍作为图片发送。
+- 更新模型目录与思考档位；新画布首次发送后才保存，Chat 不再继承 Codex 工作目录。
+- 修复公式渲染，并优化大型画布和流式回复性能。
+- Android 与 iOS 安装包保持 0.1.44。
 
 ## 上次更新（Desktop 0.1.47 / Mobile 0.1.44）
 
@@ -121,11 +104,9 @@ ThinkFromHere 0.2.8 修复本机会话无法继续发送，并改善跨设备图
 
 ## 上次更新（Desktop 0.1.36 / Mobile 0.1.44）
 
-- 桌面本地数据库与附件加密存储。
-- 支持复用 Codex CLI 登录，以及只读查看已有会话、分页与已归档记录。
-- 修复 Ubuntu 上部分 Node 管理器安装的 Codex 无法找到的问题。
-- 修复 Linux 更新包识别错误，下载与安装均显示进度。旧版本若仍无法自动安装，请手动下载本次安装包。
-- 修复 macOS 通用包的加密数据库原生模块打包。Android 与 iOS 本次保持 0.1.44 不变。
+- 桌面本地数据库与附件加密；支持复用 Codex CLI 登录、只读查看已有会话。
+- 修复 Ubuntu Codex 路径识别、Linux 更新安装，以及 macOS 通用包的原生模块打包；下载和安装均显示进度。
+- 旧版 Linux 若自动更新仍失败，请手动下载安装本次版本。Android 与 iOS 本次保持 0.1.44 不变。
 
 ## 上次更新（Desktop 0.1.34 / Mobile 0.1.44）
 
@@ -133,87 +114,24 @@ ThinkFromHere 0.2.8 修复本机会话无法继续发送，并改善跨设备图
 - Agent 会展示推理说明、命令与文件操作进度；停止、异常断连和审批都有明确终态，已生成内容会保留，工作区也会安全释放。
 - 默认仅允许工作区写入并按需审批，也支持只读与显式确认后的完全访问。Codex Agent 当前仅支持桌面端，移动端会稳定拒绝误发的 Agent 请求。
 
-## Android 0.1.44
+本次版本加入应用内更新功能：应用启动和打开设置时会自动检查最新公开版本；桌面版会在
+下载后验证安装包大小与 SHA-256，再打开系统安装器。Android 会打开新版 APK 下载，
+iOS 当前仍提供未签名模拟器构建。
 
-- Android 7.0 及以上
-- 文件大小约 25 MB
-- 项目固定 Release 密钥签名
-- SHA-256：`17b9c3349ee5b4b3b4f8a3bb9589ccc7e49af228cd6f16d6cd77c4f5b7008cde`
+下载站会通过 GitHub Release API 自动读取最新的五个平台安装包和对应 SHA-256 文件，
+即使静态回退链接尚未重新部署，也会优先显示最新公开版本。
 
-当前版本支持本地画布、分支聊天、智能画布命名、Provider、长期记忆、删除撤销，
-以及与桌面端共用账号的双向云同步。用户添加的 API Key 也可以同步，下载到手机后由
-Android Keystore 加密保存，且不会在界面回显。当前版本内置 OpenAI、Claude、豆包、
-DeepSeek V4 和 GLM 5.2，无需用户填写 API Key。画布现在可以持续保存“深思”开关；
-开启后会分开展示模型的推理内容与最终答案，关闭后国产模型会显式关闭隐藏思考，
-避免长时间没有可见输出。OpenAI GPT-5+ 会显示推理摘要，Claude 4.5+/5 会显示
-summarized thinking。豆包、DeepSeek V4 与 GLM 5.2 开启联网时会优先使用单次
-Responses 流式搜索，在 WebView 流式连接不可用时仍会自动可靠回退。多个发布编号
-会折叠为一个模型名称，模型列表只显示当前 Provider 的模型。火山公共目录中存在但当前
-账号无法调用的旧模型不会再显示。手机端点击方框时会同时
-显示详情和底部输入框，不再需要额外点击“从这里继续聊”。
-首次启动默认使用系统语言；此后登录页和登录验证邮件跟随 App 内选择的语言。
-默认登录入口已改用证书稳定的 Cloudflare Pages 域名，以兼容更多企业网络。
-登录、云同步、附件和内置模型服务现在统一通过该入口访问，避免企业网络单独拦截
-`*.supabase.co` 导致“同步失败”。
-桌面 0.1.30 也会隔离无法由 Electron SafeStorage 解密的旧 API Key 密文：云端有副本时
-自动重新加密恢复；无法恢复时只要求重新输入对应 Key，不再阻断画布和设置同步。
-Galaxy Z Fold7 等折叠屏会根据当前窗口宽度自动切换布局：外屏点击方框显示全屏详情，
-展开内屏后显示 Canvas 与详情双栏；边缘箭头可以隐藏或恢复画布列表。
-带厂商命名空间的 OpenAI GPT-5+ 模型现在也能正确启用联网和深思，同时保留网关要求的
-完整模型 ID。模型生成时，只要用户向上滚动详情就会立即暂停自动跟随；回到底部附近或
-点击“↓”后恢复。发送按钮旁的快捷键提示已移除，按钮仍固定在输入框最右侧。
-本次更新让 iOS 与 Android 的内置 OpenAI 目录也会刷新并缓存最新 GPT-5+ 模型；
-目录请求失败时继续使用最后一次成功结果，不再退回只到 GPT-5.2 的旧列表。同步刷新、
-快速终态和流式增量同时发生时，画布方框不再闪烁、消失或被空状态覆盖；深思内容框的
-展开状态也会在当前轮与历史路径之间保持稳定。
-本次更新会按画布恢复缩放与位置、上次打开的方框、详情宽度和字体缩放，并按方框恢复
-阅读滚动位置；上次使用的模型也会通过账号同步到其他平台。详情面板支持在触屏上继续
-向左拉宽，全屏时真正铺满窗口。生成回复期间及完成后，当前方框会持续留在画布上，
-不会因同步或终态更新而永久消失。
+## 下载
 
-本次更新为 Android 与 iOS 新增图片和 PDF 附件，可从系统选择器添加，并随对话保存与
-同步。移动端聊天框移入卡片详情，发送与停止共用一个按钮；卡片长按后可拖动并带震动
-提示，折叠屏导航更稳定。关闭 App 后会保持登录，OpenAI 回复会以更平滑的增量展示，
-触屏联网开关也更可靠。
-
-Desktop 0.1.30 / Mobile 0.1.40 将附件入口改为图片、PDF、arXiv 与 Codebase 下拉菜单，
-桌面和移动端都可连接公开 Git 仓库。一个子方框生成时，仍能从母方框或其他已完成方框
-并行提问；移动端打开方框详情后也始终保留画布列表入口。数学公式不再出现文字光标竖线，
-“生成中”会在最终内容完成绘制后再消失。桌面应用内更新改用免管理员权限的安装方式，
-避免安装完成后仍停留在下载校验状态。
-
-本次更新修复了 OAuth 会话刷新协议，桌面、Android 与 iOS 在重启或令牌到期后会继续
-保持登录；临时网络或安全存储异常也不会再误删登录信息。iPad 在方框详情中发送消息后，
-会立即显示并持续跟随新生成的子方框，横竖屏切换与 Stage Manager 调整窗口时也不会跳回
-母方框。附件菜单会根据可见视口自动限高并允许滚动，软键盘弹出时，iPad、iPhone 与
-Android 仍可完整选择图片、PDF、arXiv 和 Codebase。
-
-下载后，请允许浏览器或文件管理器“安装未知应用”，再打开 APK 安装。当前 APK 使用项目
-固定的 Release 密钥签名，后续正式版本可直接覆盖升级。
-
-## iOS 0.1.44
-
-当前发布的是未签名的 iOS 模拟器构建，只能在 macOS 的 iPhone Simulator 中运行，
-不能直接安装到 iPhone 真机。真机安装仍需要 Apple Developer 签名与分发配置。
-SHA-256：`ccc12baac2d9bcb2a2e1e27b99576171e1a902eec785268ff61aa57b5dbcf3f9`
-
-Linux 0.1.30 的 DEB 包名、安装摘要、应用菜单、可执行文件和应用图标均已统一为
-ThinkFromHere，并会在安装时替换旧的 `forkchat-desktop` 包。Windows 与 macOS 也使用
-同一套 ThinkFromHere 图标资源。Ubuntu 安装时会刷新图标缓存，应用菜单与 Dock 都能
-正确显示 Logo；启动时还会清理旧版重复创建的登录 URL Handler。桌面触摸板的两指滑动
-现在用于平移画布，捏合与 Ctrl/Command + 滚动继续缩放。
-登录流程中的“打开登录页”、成功和错误提示会跟随 App 内选择的语言，并在跳转系统
-浏览器后继续保持该语言。
-
-## 发布页
-
-[Latest Release](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/latest)
-目前提供 Windows、macOS、Linux、Android 和 iOS 模拟器五个平台构建及 SHA-256 校验文件。
+- [ThinkFromHere 下载站](https://darrelldai.github.io/ThinkFromHere-Releases/)
+- [Latest Release](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/latest)
 
 ## 安全提示
 
-当前安装包尚未购买代码签名证书。Windows 可能显示 SmartScreen 提示；macOS
+当前桌面安装包尚未购买代码签名证书。Windows 可能显示 SmartScreen 提示；macOS
 首次打开时，需要在“系统设置 → 隐私与安全性”中选择“仍要打开”。
-Android APK 使用项目固定的发布密钥签名，可由后续版本直接覆盖升级。
+
+Android APK 使用项目固定的 Release 密钥签名，可由后续版本直接覆盖升级。iOS 文件为
+未签名的模拟器构建，不能直接安装到 iPhone 真机。
 
 Release 中每个安装包均提供同名 `.sha256` 校验文件。
