@@ -1,19 +1,24 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.6** · Android **0.2.6 (206)** · iOS **0.2.6 (206) 模拟器测试包**
+桌面版 **0.2.13** · Android **0.2.13 (213)** · iOS **0.2.13 (213) 模拟器测试包**
 
-## 主要更新
+## 本次更新
 
-- Codex 工具生成的图片显示在回复中，历史会话也会保留图片链接。
-- 桌面和手机自动预览远程图片，无需手动下载；执行电脑须运行支持传输的新版本。
-- 桌面附件菜单支持 Download to this device，本机文件与已下载的副本可直接打开。
-- 手机长对话详情分页显示，改善账号切换、画布恢复、屏幕尺寸变化及输入框焦点。
-- 包含此前的 Inbox 清空、已读同步与历史消息通知修复。
+- 修复远程图片和 PDF 上传的云端兼容问题；执行电脑需要更新到支持文件上传的版本。
+- 明确区分云端校验失败和执行电脑版本过旧的提示。
+
+- 修复 Android 对话生成文件无法获取下载地址的问题，使用系统保存窗口保存并校验文件。
+- 长按文件或图片显示下载按钮；图片轻点放大，支持双指缩放，移除图片下方的下载链接。
+- 关闭图片预览或按 Android 返回键回到原卡片，不关闭卡片。
+- 缓存已加载的图片预览，减少重新打开卡片时的重复加载；切换账号时清空缓存。
+- Windows 安装器直接启动新安装的应用，启动失败时显示提示。
 
 ## 下载与升级
 
-- Windows x64、macOS universal、Linux x64、Android：下载对应安装包及 `.sha256` 校验文件。
-- Android 使用正式包名和固定 Release 签名，versionCode 206，可覆盖升级同签名正式版；测试版仍独立安装。
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.13 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.13)
+
+- Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
+- Android 使用固定 Release 签名和 versionCode 213，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
