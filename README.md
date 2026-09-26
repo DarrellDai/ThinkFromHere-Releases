@@ -1,8 +1,14 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.13** · Android **0.2.13 (213)** · iOS **0.2.13 (213) 模拟器测试包**
+桌面版 **0.2.14** · Android **0.2.13 (213)** · iOS **0.2.13 (213) 模拟器测试包**
 
-## 本次更新
+## 本次更新（桌面版 0.2.14）
+
+- Linux 系统更新失败时保留 pkexec 退出码、stderr 和会话诊断记录，区分取消授权与授权或执行失败。
+- 首次更新不弹密码窗口的根因仍在排查，本版不宣称该问题已修复；诊断能力从运行 0.2.14 起生效。
+- Windows、macOS 同步发布 0.2.14；Android 和 iOS 模拟器保持 0.2.13。
+
+## 上次更新（0.2.13）
 
 - 修复远程图片和 PDF 上传的云端兼容问题；执行电脑需要更新到支持文件上传的版本。
 - 明确区分云端校验失败和执行电脑版本过旧的提示。
@@ -15,7 +21,7 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.13 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.13)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.14 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.14)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
 - Android 使用固定 Release 签名和 versionCode 213，可覆盖升级同签名正式版；开发版独立安装。
