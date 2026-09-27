@@ -1,8 +1,17 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.14** · Android **0.2.13 (213)** · iOS **0.2.13 (213) 模拟器测试包**
+桌面版 **0.2.15** · Android **0.2.15 (215)** · iOS **0.2.15 模拟器测试包**
 
-## 本次更新（桌面版 0.2.14）
+## 本次更新（0.2.15）
+
+- 电脑窗口聚焦、手机 App 在前台时不显示系统通知，保留应用内提醒和通知记录；后台正常通知。
+- 修复通知准备期间切回手机 App 时仍显示系统通知的问题。
+- 后台提问提醒支持保留、收起和关闭；移除提问表单重复的关闭按钮。
+- 手机端支持浏览远程电脑工作目录；兑换额度入口移至设置。
+- 修复 Linux 更新重启后的管理员授权问题，新更新器在运行本版后生效。
+- Windows、macOS、Linux、Android 和 iOS 模拟器同步更新至 0.2.15。
+
+## 上次更新（桌面版 0.2.14）
 
 - Linux 系统更新失败时保留 pkexec 退出码、stderr 和会话诊断记录，区分取消授权与授权或执行失败。
 - 首次更新不弹密码窗口的根因仍在排查，本版不宣称该问题已修复；诊断能力从运行 0.2.14 起生效。
@@ -21,10 +30,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.14 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.14)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.15 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.15)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 213，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 215，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
