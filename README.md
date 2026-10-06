@@ -1,8 +1,10 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.22** · Android **0.2.22 (222)** · iOS **0.2.22 模拟器测试包**
+桌面版 **0.2.23** · Android **0.2.23 (223)** · iOS **0.2.23 模拟器测试包**
 
-## 本次更新（0.2.22）
+## 本次更新（0.2.23）
+
+- 本机生成文件即使位于画布工作目录外，也可点击链接直接打开。
 
 - Codex 执行期间按 Enter 或点击发送默认排队下一轮；Ctrl+Enter 可并入当前轮次。浏览历史不再把新消息发送到平行分支。
 - 修复详情选中高亮线遮挡文字，移除内侧线条并增加正文内边距。
@@ -13,7 +15,7 @@
 - 各画布改用可点击的紫色数字徽标打开独立 Inbox，与时间位于同一行。
 - 总 Inbox 数字统一为紫色徽标，移除画布右上角重复入口。
 - 编辑和删除按钮保留在标题行，悬停通知数字不会触发显示。
-- 内置模型服务最低支持版本提升至 0.2.22，请同步更新电脑与手机。
+- 内置模型服务最低支持版本提升至 0.2.23，请同步更新电脑与手机。
 
 ## 上次更新（0.2.19）
 
@@ -76,10 +78,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.22 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.22)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.23 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.23)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 222，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 223，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
