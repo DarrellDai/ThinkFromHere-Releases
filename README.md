@@ -1,8 +1,16 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.17** · Android **0.2.17 (217)** · iOS **0.2.17 模拟器测试包**
+桌面版 **0.2.18** · Android **0.2.18 (218)** · iOS **0.2.18 模拟器测试包**
 
-## 本次更新（0.2.17）
+## 本次更新（0.2.18）
+
+- 修复多设备持续更新时误报同步失败；完整对账完成后才显示已同步。
+- Inbox 与紫色边框、紫点同步，已回答的问题自动移除提醒；未打开画布也能及时显示通知。
+- 画布列表提供总 Inbox 和各画布独立 Inbox；新画布未提交的文字在切换后保留。
+- 电脑版双击画布空白处关闭卡片详情；修复语言切换后的混合语言提示。
+- 内置模型服务最低支持版本提升至 0.2.18，请同步更新电脑与手机。
+
+## 上次更新（0.2.17）
 
 - 版本过旧时，可从登录提示和对话错误处直接打开更新界面。
 - 双击详情卡片后，画布定位到对应卡片。
@@ -46,10 +54,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.17 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.17)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.18 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.18)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 217，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 218，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
