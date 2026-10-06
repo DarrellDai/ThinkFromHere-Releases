@@ -1,8 +1,17 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.18** · Android **0.2.18 (218)** · iOS **0.2.18 模拟器测试包**
+桌面版 **0.2.19** · Android **0.2.19 (219)** · iOS **0.2.19 模拟器测试包**
 
-## 本次更新（0.2.18）
+## 本次更新（0.2.19）
+
+- 修复手机版将版本过旧错误误显示为“正在恢复登录”，更新提示可正常显示。
+- 登录页更新按钮与重新检查登录状态按钮分行排列。
+- 版本停用提示仅显示简洁说明，按当前界面语言显示中文或英文，不再显示内部错误前缀。
+- 内置模型服务最低支持版本提升至 0.2.19，请同步更新电脑与手机。
+
+若旧版手机版卡在“Restoring sign-in”，可直接下载新版 APK 覆盖安装，无需先登录。
+
+## 上次更新（0.2.18）
 
 - 修复多设备持续更新时误报同步失败；完整对账完成后才显示已同步。
 - Inbox 与紫色边框、紫点同步，已回答的问题自动移除提醒；未打开画布也能及时显示通知。
@@ -54,10 +63,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.18 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.18)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.19 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.19)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 218，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 219，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
