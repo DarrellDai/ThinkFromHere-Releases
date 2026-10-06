@@ -1,14 +1,16 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.20** · Android **0.2.20 (220)** · iOS **0.2.20 模拟器测试包**
+桌面版 **0.2.21** · Android **0.2.21 (221)** · iOS **0.2.21 模拟器测试包**
 
-## 本次更新（0.2.20）
+## 本次更新（0.2.21）
+
+- 新建画布时“选择其他文件夹”从当前选定的工作目录打开。
 
 - 删除画布时同步清理 Inbox 通知，防止延迟通知或未读记录恢复已删除画布的提醒。
 - 各画布改用可点击的紫色数字徽标打开独立 Inbox，与时间位于同一行。
 - 总 Inbox 数字统一为紫色徽标，移除画布右上角重复入口。
 - 编辑和删除按钮保留在标题行，悬停通知数字不会触发显示。
-- 内置模型服务最低支持版本提升至 0.2.20，请同步更新电脑与手机。
+- 内置模型服务最低支持版本提升至 0.2.21，请同步更新电脑与手机。
 
 ## 上次更新（0.2.19）
 
@@ -71,10 +73,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.20 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.20)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.21 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.21)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 220，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 221，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
