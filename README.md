@@ -1,8 +1,17 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.15** · Android **0.2.15 (215)** · iOS **0.2.15 模拟器测试包**
+桌面版 **0.2.16** · Android **0.2.16 (216)** · iOS **0.2.16 模拟器测试包**
 
-## 本次更新（0.2.15）
+## 本次更新（0.2.16）
+
+- 恢复受支持内置模型的联网搜索，并将搜索费用纳入额度预留、结算和账单核对。
+- 按模型能力启用搜索；未开通搜索的模型禁用搜索开关。
+- 移除已退役的 GPT-4o mini / GPT-4.1 mini 目录条目。
+- 修复登录凭证失效后反复刷新，显示更明确的同步错误。
+- 内置模型服务最低支持版本提升至 0.2.16，旧版需更新后继续使用。
+- Windows、macOS、Linux、Android 和 iOS 模拟器同步发布。
+
+## 上次更新（0.2.15）
 
 - 电脑窗口聚焦、手机 App 在前台时不显示系统通知，保留应用内提醒和通知记录；后台正常通知。
 - 修复通知准备期间切回手机 App 时仍显示系统通知的问题。
@@ -30,10 +39,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.15 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.15)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.16 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.16)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 215，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 216，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
