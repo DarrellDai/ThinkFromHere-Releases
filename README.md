@@ -1,8 +1,21 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.24** · Android **0.2.24 (224)** · iOS **0.2.24 模拟器测试包**
+桌面版 **0.2.26** · Android **0.2.26 (226)** · iOS **0.2.26 模拟器测试包**
 
-## 本次更新（0.2.24）
+## 本次更新（0.2.26）
+
+- 按停止或 Esc 后，确认当前执行已终止，再自动继续待处理消息。
+- 优先在当前卡片处理待并入的 Append，完成后再按顺序执行下一轮 Queue。
+- 修复追加确认与终止同时发生时的处理；已并入的消息不会重复发送。
+- 待处理列表和停止按钮提示反映 Append 优先的执行顺序。
+
+## 上次更新（0.2.25）
+
+- 电脑版鼠标移到画布上即可滚轮缩放，无需先点击画布或切走输入框焦点；拖拽仍可平移。
+- 画布生成回答时，列表卡片显示动画，切换画布后也能识别后台生成状态。
+- 改善 Codex 执行中的澄清答案处理，延迟提交的答案可追加到当前轮次。
+
+## 上次更新（0.2.24）
 
 - 在卡片详情中使用滚轮、触控板或手指滑动浏览回答，即可消除紫色未读提示；自动滚动不会误标为已读。
 - 点击“Mark as unread / 标为未读”后保持卡片详情打开，保留当前选中卡片和阅读位置。
@@ -84,10 +97,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.23 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.23)
+[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.26 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.26)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 223，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 226，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
