@@ -9,4 +9,4 @@
 
 包含 Windows x64、macOS universal、Linux x64 DEB / TAR.GZ、Android 正式签名 APK，以及仅供 macOS 模拟器使用的 iOS ZIP；各附 SHA-256 校验文件。
 
-源码版本：DarrellDai/ThinkFromHere 的 1e07a45dee98fa3c0fdcbfe452e3799f233bf9e8（0.2.37）。
+源码版本：DarrellDai/ThinkFromHere 的 2af129dba77542ad6881740227d9b0ff417b4f01（0.2.37）。
