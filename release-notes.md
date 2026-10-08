@@ -1,15 +1,21 @@
-## ThinkFromHere 0.2.39
+## ThinkFromHere 0.2.40
 
-- Goal 右侧新增通用 @ 入口，可引用文件、文件夹、已安装应用、技能、MCP 工具和浏览器，支持搜索、多选及移除。
-- 修复应用列表因远程发现超时而出现 “Could not load Apps” 的问题，优先读取已安装且可调用的应用。
-- 桌面端内置 Playwright MCP 浏览器连接支持；通过浏览器扩展连接 Chrome 或 Edge。
-- 修复开发模式默认浏览器登录配置，开发版与发布版使用独立回调。
-- 继续提供自有域名下载和 SHA-256 校验；Android APK 与桌面安装包同步到香港下载镜像。
+- 修复多个提问同时出现时无法找回前面问题的情况：提问表单新增数量提示和问题切换列表。
+- 切换问题时保留各自已填写的答案；回答或关闭一个问题不会移除其他问题。
+- 表单收起时仍可切换问题，已结束的问题会显示状态。
+- 包含启动时自动连接 Codex agent 的修复。
 
-@ 引用目前用于本地 Codex 新消息；远程会话和运行中的任务暂不支持。
-浏览器连接需要安装相应扩展并由用户选择授权标签页。
-iOS ZIP 为模拟器应用，不是可安装到 iPhone 的发行包。
+## English
 
-下载：https://www.thinkfromhere.ai/downloads/
+- Added a question switcher and request count so earlier questions remain accessible when multiple requests are open.
+- Draft answers are preserved when switching questions. Answering or closing one request leaves the others available.
+- The switcher remains visible when the form is collapsed; ended requests are labeled.
+- Includes the fix to automatically connect the Codex agent at startup.
 
-全部六类安装包来自源码提交 `a7fcd9b0719108efdefcd62d7ca971c4bd71281f` 的 CI 构建。
+iOS ZIP 为模拟器应用，不是真机安装包。
+The iOS ZIP is a simulator app, not an iPhone installation package.
+
+下载 / Download: https://www.thinkfromhere.ai/downloads/
+
+全部六类安装包来自源码提交 `02e53f023700de99a5394130abecbc3f8ba9b947` 的 CI 构建。
+All six packages are built by CI from source commit `02e53f023700de99a5394130abecbc3f8ba9b947`.
