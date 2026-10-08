@@ -1,12 +1,8 @@
-修复检查更新因 GitHub API 匿名额度耗尽而返回 HTTP 403 的问题。
+## ThinkFromHere 0.2.38
 
-- 桌面端和 Android 改为读取公开静态更新清单，检查更新不再使用 GitHub Releases API，也不需要用户配置 Token。
-- 安装包继续通过 GitHub Releases 下载，并保留 SHA-256 校验。
-- 发布完成后自动刷新更新清单；安装包或校验文件不完整时保留上一份清单。
-- 修复删除卡片后通知残留的问题。
+- 下载页迁移至 https://www.thinkfromhere.ai/downloads/。
+- 桌面端和 Android 的更新清单、安装包和校验文件统一走自有域名，客户端无需直连 GitHub。
+- 保留安装包 SHA-256 校验和分段下载支持。
+- 旧版内置旧更新地址；若 App 内无法更新，请从新下载页手动安装此版本一次。
 
-旧版客户端仍使用原更新接口。若已经遇到限流，请先从本发布页手动安装 0.2.37，后续更新检查将使用静态清单。
-
-包含 Windows x64、macOS universal、Linux x64 DEB / TAR.GZ、Android 正式签名 APK，以及仅供 macOS 模拟器使用的 iOS ZIP；各附 SHA-256 校验文件。
-
-源码版本：DarrellDai/ThinkFromHere 的 2af129dba77542ad6881740227d9b0ff417b4f01（0.2.37）。
+安装包来自已提交源码的 CI 构建。
