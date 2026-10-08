@@ -198,3 +198,17 @@ Android APK 使用项目固定的 Release 密钥签名，可由后续版本直�
 未签名的模拟器构建，不能直接安装到 iPhone 真机。
 
 Release 中每个安装包均提供同名 `.sha256` 校验文件。
+
+## Static update feed
+
+Clients read `https://raw.githubusercontent.com/DarrellDai/ThinkFromHere-Releases/main/updates/latest.json`
+without GitHub API authentication. Installer downloads and SHA-256 sidecars remain on GitHub Releases.
+
+`Publish static update manifest` validates the latest stable release and publishes only after all six
+installer formats and their checksum assets have finished uploading. It runs after `Publish verified
+installers`, on release publication/edit, every half hour, or through workflow dispatch. The explicit
+workflow call is required because releases created with `GITHUB_TOKEN` do not trigger other workflows.
+If validation fails, the previous manifest remains available. CDN caching may briefly delay visibility.
+Only the workflow uses an authenticated GitHub API request; credentials are never included in the feed.
+
+Generator checks: `python3 -m unittest discover -s scripts -p 'test_*.py'`.

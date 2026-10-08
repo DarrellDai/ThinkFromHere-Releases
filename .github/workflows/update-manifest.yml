@@ -1,0 +1,38 @@
+name: Publish static update manifest
+on:
+  workflow_call:
+  workflow_dispatch:
+  release:
+    types: [published, edited]
+  schedule:
+    - cron: '17,47 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: static-update-manifest
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Validate manifest generator
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Generate manifest from latest complete release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api "repos/$GH_REPO/releases/latest" > "$RUNNER_TEMP/latest-release.json"
+          python3 scripts/write-update-manifest.py "$RUNNER_TEMP/latest-release.json" updates/latest.json
+      - name: Publish static JSON
+        run: |
+          git add updates/latest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'release: refresh static update manifest'
+          git pull --rebase origin main
+          git push origin HEAD:main

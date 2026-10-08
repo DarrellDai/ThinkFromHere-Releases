@@ -31,3 +31,8 @@ jobs:
         run: |
           gh release create "v$RELEASE_VERSION" release/* --draft --target gh-pages --title "ThinkFromHere v$RELEASE_VERSION" --notes-file release-notes.md
           gh release edit "v$RELEASE_VERSION" --draft=false --latest
+  update-manifest:
+    needs: publish
+    uses: ./.github/workflows/update-manifest.yml
+    permissions:
+      contents: write
