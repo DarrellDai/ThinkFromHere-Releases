@@ -1,24 +1,20 @@
-## ThinkFromHere 0.2.50
+## ThinkFromHere 0.2.51
 
-- 修复手机或查看端重启时，将仍在远程电脑执行的 Codex 任务误标为“应用退出导致中断”的问题。
-- 远程会话运行中可保存模型、权限和推理强度设置，当前轮次结束后生效。
-- 减少远程指令转交和确认的等待时间。
-- 记住画布视角和侧栏状态；动态显示运行中任务。
-- 改进系统通知，音量和静音设置独立保存在每台设备。
-- 修复 Linux 打开生成文件后一直显示忙碌的问题。
+- CLI 账号模式连接本机共享 Codex 后台，历史读取与续聊使用同一后台版本；独立账号登录继续使用私有服务。
+- 修复导入会话分支失败后，再次发送会静默丢失原始上下文的问题，并保留服务器原始错误。
+- 断开仅关闭本应用连接，取消仅针对本应用任务，不停止共享后台或干预其他客户端审批。
+- 保留退出应用时请求中断本应用任务的行为；后台停止状态无法确认时明确提示。
 
 ## English
 
-- Preserve running remote Codex tasks when a phone or viewing app restarts, avoiding false app-closed interruption errors.
-- Save remote model, permission and reasoning settings during an active turn and apply them after that turn completes.
-- Reduce remote command handoff and confirmation latency.
-- Restore canvas viewport and sidebar state, and show running tasks in Activity.
-- Improve system notifications and keep volume and mute preferences local to each device.
-- Fix Linux generated-file opening remaining stuck in a busy state.
+- Connect CLI accounts and history readers to the shared local Codex daemon while keeping independent account sessions isolated.
+- Prevent silent context loss when sending again after an imported session fork fails, and preserve the original server error.
+- Disconnect only the app's connection, interrupt only its tasks, and leave other clients' approvals untouched.
+- Keep interruption requests on app exit and report when backend termination cannot be confirmed.
 
 iOS ZIP 为模拟器应用，不是真机安装包。
 The iOS ZIP is a simulator app, not an iPhone installation package.
 
 下载 / Download: https://www.thinkfromhere.ai/downloads/
 
-源码提交 / Source revision: `36b6af9` (tag `v0.2.50`).
+源码提交 / Source revision: `e4e331f8f25f9258fe7420e1d74df9a5c31f84fe`.
