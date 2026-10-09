@@ -1,19 +1,20 @@
-## ThinkFromHere 0.2.41
+## ThinkFromHere 0.2.42
 
-- 搜索支持分别勾选标题、提问、回答和思考过程，默认全部选中。
-- 工具调用和 Agent 调用记录不参与搜索；扩大搜索窗口，方便查看筛选项与结果。
-- 优化自动画布标题：超长标题会重新概括，避免直接截断词语。
+- Agent / Remote 与同步请求自动比较现有入口、Supabase 直连和香港中继，选择更快的健康线路；海外直连更快时可跳过香港。
+- 网络故障后后续请求切换线路，选路层不会重复发送指令。
+- 减少远程状态轮询等待和重复读取；合并同步回执查询，并行拉取独立数据，改善同步等待。
+- 请将电脑与手机都更新到 0.2.42，以启用新版通信与同步优化。
 
 ## English
 
-- Search titles, questions, answers, and reasoning independently, with all fields enabled by default.
-- Tool and agent call logs are excluded from search. A wider search dialog makes filters and results easier to read.
-- Automatically generated canvas titles are retried when too long instead of being truncated mid-word.
+- Agent / Remote and sync requests compare the existing gateway, direct Supabase access, and the Hong Kong relay, selecting a faster healthy route. Faster direct connections can bypass Hong Kong.
+- Subsequent requests switch routes after network failures. Routing never replays commands.
+- Reduced remote polling delays and duplicate reads; combined receipt queries and parallel reads of independent sync data reduce waiting.
+- Update both desktop and mobile to 0.2.42 to enable these communication and sync improvements.
 
 iOS ZIP 为模拟器应用，不是真机安装包。
 The iOS ZIP is a simulator app, not an iPhone installation package.
 
 下载 / Download: https://www.thinkfromhere.ai/downloads/
 
-全部六类安装包来自源码提交 `47f8fa2f4eb4b62cdb0ac7975082e7a165930838` 的 CI 构建。
-All six packages are built by CI from source commit `47f8fa2f4eb4b62cdb0ac7975082e7a165930838`.
+源码提交 / Source revision: `7ed5f29c4601bed6842bb84b18e078146dddc9ea`.
