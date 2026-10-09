@@ -1,4 +1,4 @@
-## ThinkFromHere 0.2.47
+## ThinkFromHere 0.2.48
 
 - 关闭最后一个窗口或更新重启时，保存正在运行的任务并停止执行；重新打开后自动继续原卡片。
 - Codex 接回原线程发起续接轮次；Chat 根据原问题与已生成内容继续。手动取消或已经完成的任务不会自动恢复。
@@ -24,4 +24,4 @@ The iOS ZIP is a simulator app, not an iPhone installation package.
 
 下载 / Download: https://www.thinkfromhere.ai/downloads/
 
-源码提交 / Source revision: `db2a8d806e910d33effa2eb8827a73b6919a45cd`.
+源码提交 / Source revision: `0c0b918a410e962f0cdf59c6d424ebab0d196957`.
