@@ -1,24 +1,20 @@
-## ThinkFromHere 0.2.51
+## ThinkFromHere 0.2.52
 
-- CLI 账号模式连接本机共享 Codex 后台，历史读取与续聊使用同一后台版本；独立账号登录继续使用私有服务。
-- 修复导入会话分支失败后，再次发送会静默丢失原始上下文的问题，并保留服务器原始错误。
-- 断开仅关闭本应用连接，取消仅针对本应用任务，不停止共享后台或干预其他客户端审批。
-- 保留退出应用时请求中断本应用任务的行为；后台停止状态无法确认时明确提示。
-
-- 补齐导入分支失败和共享后台提示的英文翻译。
+- 新增和编辑模型 Provider 改为独立弹窗，手机上无需向下寻找表单。
+- 检查更新按钮显示按压、检查中和完成状态；移动端检查获取最新更新信息。
+- 增大手机设置按钮触摸区域。
+- 精简音量控件：静音按钮、滑条、百分比、试听按钮依次排列，去掉重复文字。
 
 ## English
 
-- Connect CLI accounts and history readers to the shared local Codex daemon while keeping independent account sessions isolated.
-- Prevent silent context loss when sending again after an imported session fork fails, and preserve the original server error.
-- Disconnect only the app's connection, interrupt only its tasks, and leave other clients' approvals untouched.
-- Keep interruption requests on app exit and report when backend termination cannot be confirmed.
-
-- Add missing English translations for imported fork failures and shared daemon notices.
+- Open provider creation and editing in a dedicated dialog.
+- Show visible press, checking and completion feedback; mobile update checks fetch fresh release information.
+- Enlarge touch targets in mobile Settings.
+- Simplify sound controls: mute, volume slider, percentage, then preview.
 
 iOS ZIP 为模拟器应用，不是真机安装包。
 The iOS ZIP is a simulator app, not an iPhone installation package.
 
 下载 / Download: https://www.thinkfromhere.ai/downloads/
 
-源码提交 / Source revision: `926bc6bb2ac4481edee3994535128b128d4a7983`.
+源码提交 / Source revision: `96a71de84c9b08854382b16352648023838f3ca0`.
