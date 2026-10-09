@@ -5,6 +5,8 @@
 - 断开仅关闭本应用连接，取消仅针对本应用任务，不停止共享后台或干预其他客户端审批。
 - 保留退出应用时请求中断本应用任务的行为；后台停止状态无法确认时明确提示。
 
+- 补齐导入分支失败和共享后台提示的英文翻译。
+
 ## English
 
 - Connect CLI accounts and history readers to the shared local Codex daemon while keeping independent account sessions isolated.
@@ -12,9 +14,11 @@
 - Disconnect only the app's connection, interrupt only its tasks, and leave other clients' approvals untouched.
 - Keep interruption requests on app exit and report when backend termination cannot be confirmed.
 
+- Add missing English translations for imported fork failures and shared daemon notices.
+
 iOS ZIP 为模拟器应用，不是真机安装包。
 The iOS ZIP is a simulator app, not an iPhone installation package.
 
 下载 / Download: https://www.thinkfromhere.ai/downloads/
 
-源码提交 / Source revision: `e4e331f8f25f9258fe7420e1d74df9a5c31f84fe`.
+源码提交 / Source revision: `926bc6bb2ac4481edee3994535128b128d4a7983`.
