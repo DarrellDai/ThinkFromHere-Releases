@@ -1,22 +1,27 @@
-## ThinkFromHere 0.2.46
+## ThinkFromHere 0.2.47
 
-- 收件箱改为「动态」：未读显示紫色点，查看后保留记录，新的动态排在最上面。
-- 全局动态与每个 Canvas 显示未读数量；Canvas 卡片底部左侧显示时间，右侧使用固定大小的图标，未读为 0 时隐藏数字。
-- 超过 200 条动态时，从最旧的已读记录开始清理；未读记录始终保留。
-- 动态弹窗只保留列表滚动，标题与说明固定，修复双层滚动条。
-- 已读状态持久保存，并支持跨设备同步。
+- 关闭最后一个窗口或更新重启时，保存正在运行的任务并停止执行；重新打开后自动继续原卡片。
+- Codex 接回原线程发起续接轮次；Chat 根据原问题与已生成内容继续。手动取消或已经完成的任务不会自动恢复。
+- 修复恢复任务后界面仍显示停止，以及关闭窗口时主进程出现 “Object has been destroyed” 的错误。
+- 修复开发模式重启竞争和加载失败后的白屏恢复。
+- 「动态」保留已读记录，未读显示紫色点，新条目置顶；全局与每个 Canvas 显示未读数量。
+- 动态超过 200 条时优先清理最旧的已读记录，未读条目始终保留。
 
 ## English
 
-- Inbox is now Activity: purple dots identify unread entries, viewed entries remain in the list, and new activity appears first.
-- Global and per-canvas unread counts. Canvas cards show the time on the left and a fixed-size activity icon on the right; zero counts are hidden.
-- Above 200 entries, the oldest read entries are removed first. Unread entries are always retained.
-- Activity uses a single scrolling list with a fixed header, eliminating nested scrollbars.
-- Read states persist across restarts and sync across devices.
+- Save and stop running tasks when closing the last window or restarting for an update, then continue on the original cards after reopening.
+- Codex continues in its original thread with a new turn; Chat continues from the original request and partial answer. Completed and manually cancelled tasks are not restarted.
+- Fix resumed cards showing a stopped state and the main-process “Object has been destroyed” error on window close.
+- Fix development restart races and improve recovery from failed window loads.
+- Activity retains read entries, marks unread entries with purple dots, sorts newest first, and shows global and per-canvas unread counts.
+- Above 200 activity entries, remove the oldest read entries first while retaining all unread entries.
+
+任务恢复会发起新请求，并非恢复已终止的网络流；第三方工具的外部副作用不能保证精确断点续执行。
+Task recovery issues a new request rather than resuming a terminated network stream; external tool side effects cannot be guaranteed to resume exactly once.
 
 iOS ZIP 为模拟器应用，不是真机安装包。
 The iOS ZIP is a simulator app, not an iPhone installation package.
 
 下载 / Download: https://www.thinkfromhere.ai/downloads/
 
-源码提交 / Source revision: `d878f79d1c68f4786fc5d713746f1315d0a1eadf`.
+源码提交 / Source revision: `db2a8d806e910d33effa2eb8827a73b6919a45cd`.
