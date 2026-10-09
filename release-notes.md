@@ -17,4 +17,4 @@ The iOS ZIP is a simulator app, not an iPhone installation package.
 
 下载 / Download: https://www.thinkfromhere.ai/downloads/
 
-源码提交 / Source revision: `7ed5f29c4601bed6842bb84b18e078146dddc9ea`.
+源码提交 / Source revision: `c26db99398017cc485ba3a641f6859d1b3ffd6b1`.
