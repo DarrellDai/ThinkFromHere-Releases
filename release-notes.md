@@ -1,24 +1,24 @@
-## ThinkFromHere 0.3.0
+## ThinkFromHere 0.3.1
 
-- 新增 Claude Code 支持，可在统一的 Agent 界面切换 Codex 与 Claude Code。
-- Claude Code 支持模型、思考强度、运行模式、附件、Fast、Goal、文件引用和历史会话浏览。
-- 设置页统一展示连接状态、账号、订阅计划、可用模型、版本和代理；支持 CLI 连接、账号登录和断开连接。
-- 支持安装本机 Agent CLI，并统一本地与远程工作目录选择及最近目录记录。
-- 修复同一电脑同时运行开发版和正式版时，远程卡片被误判为多台电脑拥有的问题。
-- 改善浅色主题下的模式显示、模式图标及绕过权限时的警告。
+- Claude Code 连续多轮复用进程，减少重复启动开销；从旧卡片继续时按消息检查点建立独立分支。
+- 远程电脑和手机可看到工具执行的具体命令、描述及完成状态。
+- 修复长回复和长思考内容被截断后停止实时更新的问题，持续显示最新内容。
+- Claude 未返回可见思考文字时仍保留思考面板，并明确显示空内容提示。
+- 支持同一电脑上的开发版与正式版共享 Claude 会话，恢复已验证的连接，并同步执行耗时。
+- 改善 Claude 排队输入与刚启动的远程会话操作，Agent 引擎选择中优先显示 Codex。
 
 ## English
 
-- Add Claude Code alongside Codex in the unified Agent interface.
-- Support model and effort selection, modes, attachments, Fast, Goal, file references and existing Claude sessions.
-- Unify connection settings, including account, plan, available models, version and proxy; connect using the CLI or account sign-in, and disconnect from settings.
-- Support local Agent CLI installation and shared recent working directory choices for local and remote sessions.
-- Fix remote card ownership conflicts when development and release instances run on the same computer.
-- Improve mode visibility in the light theme, mode icons and bypass-permissions warnings.
+- Reuse the Claude Code process across consecutive turns; preserve independent branches using message checkpoints when continuing from older cards.
+- Show tool commands, descriptions and execution status on remote computers and phones.
+- Keep long answers and reasoning previews updating after snapshot truncation.
+- Keep the Claude reasoning panel visible with an explicit placeholder when no visible reasoning is returned.
+- Share Claude sessions between development and release instances on the same computer, restore verified connections and synchronize turn duration.
+- Improve queued input and actions on newly started remote Claude sessions; list Codex first in the engine selector.
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: `7702b9519cd3a615be030c26b104e10cd53f9090` (main).
+Source revision: `34e2cefeae0f10447b2114d53128adf9291be6fb` (main).
