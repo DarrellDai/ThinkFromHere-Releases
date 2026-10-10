@@ -21,4 +21,4 @@ iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: `b22a5ae0efd9afba43d5d0633cb3660cec0de069` (main).
+Source revision: `7702b9519cd3a615be030c26b104e10cd53f9090` (main).
