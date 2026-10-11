@@ -1,8 +1,15 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.3** · Android **0.3.3 (303)** · iOS **0.3.3 模拟器测试包**
+桌面版 **0.3.4** · Android **0.3.4 (304)** · iOS **0.3.4 模拟器测试包**
 
-## 本次更新（0.3.3）
+## 本次更新（0.3.4）
+
+- 命令列表与帮助默认保持一行，点击箭头展开完整用法和示例。
+- 移除 /cost，保留 /usage；聊天框提供原生命令面板和模型、推理强度选择。
+- 改进 Claude 提问与远程回答，以及 Codex 远程执行状态和资源引用。
+- 画布支持拖动、删除和排列的会话内撤销；已有卡片保持原位，手动排列时重新布局。
+
+## 上次更新（0.3.3）
 
 - Inbox 右键菜单打开后，再次右键或在菜单外左键只关闭菜单，不会重新弹出菜单或误打开消息卡片。
 - 电脑右键切换已读与未读；手机右划到底直接切换，显示紫色 Unread 或蓝色 Read。
@@ -84,10 +91,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.3 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.3)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.4 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.4)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 303，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 304，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
