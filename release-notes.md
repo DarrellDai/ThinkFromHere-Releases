@@ -1,20 +1,20 @@
-## ThinkFromHere 0.3.5
+## ThinkFromHere 0.3.6
 
-- 改进排队消息布局，长消息换行时仍可看到右下角取消按钮，手机端保留足够的触控空间。
-- 优化设置说明和 Agent 控件提示；提问弹窗明确标注 Chat / Agent 来源。
-- 移除 Codex Fast 默认设置，保留画布内手动选择。
-- 恢复中断的 Codex 任务时保留回复语言。
+- 扩展 Claude 和 Codex 的原生命令界面，改进导入、状态反馈和命令结果校验。
+- Claude 导入支持读取 Codex 项目指引和 MCP 配置，清楚显示来源及作用范围。
+- 支持发送前后打开附件、在应用内预览图片；收紧图片下方间距。
+- 改进命令弹窗关闭按钮、远程侧聊及运行中输入控制。
 
 ## English
 
-- Improve queued message layout, keeping the cancel button visible at the bottom right with room for touch controls on mobile.
-- Clarify settings and Agent control hints; identify Chat / Agent clarification dialogs.
-- Remove the Codex Fast default setting while retaining explicit per-canvas selection.
-- Preserve the response language when recovering interrupted Codex tasks.
+- Expand native Claude and Codex command panels, with clearer imports, status feedback and result validation.
+- Import Codex project guidance and MCP configuration into Claude with visible sources and scopes.
+- Open attachments before and after sending, preview images in the app, and reduce spacing beneath images.
+- Improve dialog close controls, remote side chats and input controls during running tasks.
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: `0fe10ed1796df6b679022e0674eb743f4959207c` (main).
+Source revision: `c15084e0795f007ae4dfa59aa4809c11fd77a894` (main).
