@@ -1,8 +1,14 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.2.23** · Android **0.2.23 (223)** · iOS **0.2.23 模拟器测试包**
+桌面版 **0.3.3** · Android **0.3.3 (303)** · iOS **0.3.3 模拟器测试包**
 
-## 本次更新（0.2.23）
+## 本次更新（0.3.3）
+
+- Inbox 右键菜单打开后，再次右键或在菜单外左键只关闭菜单，不会重新弹出菜单或误打开消息卡片。
+- 电脑右键切换已读与未读；手机右划到底直接切换，显示紫色 Unread 或蓝色 Read。
+- 未读紫点位于消息左侧垂直居中位置；切换阅读状态不改变消息时间和排序。
+
+## 上次更新（0.2.23）
 
 - 本机生成文件即使位于画布工作目录外，也可点击链接直接打开。
 
@@ -78,10 +84,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://darrelldai.github.io/ThinkFromHere-Releases/) · [v0.2.23 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.2.23)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.3 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.3)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 223，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 303，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
