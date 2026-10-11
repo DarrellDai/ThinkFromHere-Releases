@@ -1,8 +1,14 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.4** · Android **0.3.4 (304)** · iOS **0.3.4 模拟器测试包**
+桌面版 **0.3.5** · Android **0.3.5 (305)** · iOS **0.3.5 模拟器测试包**
 
-## 本次更新（0.3.4）
+## 本次更新（0.3.5）
+
+- 改进排队消息布局，保留右下角取消按钮与手机触控空间。
+- 优化设置与 Agent 控件提示，明确 Chat / Agent 提问来源。
+- 移除 Codex Fast 默认设置，保留画布内手动选择；任务恢复保留回复语言。
+
+## 上次更新（0.3.4）
 
 - 命令列表与帮助默认保持一行，点击箭头展开完整用法和示例。
 - 移除 /cost，保留 /usage；聊天框提供原生命令面板和模型、推理强度选择。
@@ -91,10 +97,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.4 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.4)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.5 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.5)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 304，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 305，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
