@@ -1,8 +1,14 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.5** · Android **0.3.5 (305)** · iOS **0.3.5 模拟器测试包**
+桌面版 **0.3.7** · Android **0.3.7 (307)** · iOS **0.3.7 模拟器测试包**
 
-## 本次更新（0.3.5）
+## 本次更新（0.3.7）
+
+- 降低云同步轮询负载，增加失败退避与恢复机制。
+- 完善远程 Fast、Goal、资源引用与工作目录选择。
+- 优化卡片撤销、导航、图片预览和启动体验。
+
+## 上次更新（0.3.5）
 
 - 改进排队消息布局，保留右下角取消按钮与手机触控空间。
 - 优化设置与 Agent 控件提示，明确 Chat / Agent 提问来源。
@@ -97,7 +103,7 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.5 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.5)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.7 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.7)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
 - Android 使用固定 Release 签名和 versionCode 305，可覆盖升级同签名正式版；开发版独立安装。
