@@ -1,20 +1,19 @@
-## ThinkFromHere 0.3.7
+## ThinkFromHere 0.3.8
 
-- 降低空闲同步和远程轮询频率，按云端变更标记读取变化的表；云端异常时逐步延长重试间隔，恢复后继续同步。
-- 恢复远程 Codex 续聊的 Fast、Goal，支持远程资源引用与工作目录显示，保留远程执行活动状态。
-- 新增卡片红旗与列表入口，区分取消、失败和完成状态；支持撤销卡片缩放与删除后的画布恢复。
-- 记住各账号最后打开的画布，增加父卡片导航，改进图片预览和开发版启动诊断。
+- 图片生成新增明确的输入与输出关系记录，只折叠有记录的修订图，保留独立图片；旧卡片没有关系记录时不猜测隐藏。
+- 修复 Claude 图片在卡片正文与历史回复中被误拦截，完善图片保存位置与嵌入指引。
+- 改进通知关闭按钮，移除提醒折叠控件。
 
 ## English
 
-- Reduce idle sync and remote polling, read changed tables using server revisions, and back off during cloud outages before resuming synchronization.
-- Restore Fast and Goal for remote Codex continuations, support remote references and working directories, and preserve execution activity.
-- Add card flags and a flagged-card list, distinguish cancelled and failed turns, and improve undo for resizing and deletion.
-- Restore the last canvas per account, add parent-card navigation, and improve image previews and development startup diagnostics.
+- Record explicit image input/output relationships and fold only recorded revisions, preserving independent images and legacy images without provenance.
+- Fix blocked Claude image previews in current and historical replies, and clarify where to save and how to embed image deliverables.
+- Clarify notification close buttons and remove reminder collapse controls.
 
+图片关系记录需更新执行端与浏览端，并在后续生成中产生；旧图片不会自动补录关系。
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: 60b7b03f3cd0f53331b2508e68cd1e3057d72f98 (main).
+Source revision: 599575e7b8db58db9da8bd0ec49450afcdae398a (main).
