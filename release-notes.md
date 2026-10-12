@@ -1,4 +1,7 @@
-## ThinkFromHere 0.3.10
+## ThinkFromHere 0.3.11
+
+- Agent 自动恢复、工作期间发送、语言和模型选择等偏好随账号跨设备同步，兼容旧设置迁移。
+- 整个通知设置区域仅保存在当前设备，新增统一提示并移除重复的音量说明。
 
 - 同步版本查询接口不可用时自动退回全量同步，五分钟后重试，避免旧中转接口返回 Not found 导致同步中断；鉴权和网络错误仍正常报告。
 - 双击 Shift 打开搜索后立即聚焦输入框，可直接输入。
@@ -6,6 +9,9 @@
 - 修复停止后未消费的追加消息在新卡片继续执行，并在活动回复旁展示用户提问。
 
 ## English
+
+- Sync Agent recovery, live input, language, and model preferences across devices on the same account, preserving existing settings during migration.
+- Keep all notification settings local to each device, with one clear notice instead of a duplicate volume note.
 
 - Fall back to full synchronization when the revision endpoint is unavailable, then retry after five minutes. Authentication and network failures remain visible.
 - Focus the search input immediately after opening search with a double tap of Shift.
@@ -17,4 +23,4 @@ iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: 4febbe34201f58b9bb6e4686f28fbe0be1e70f97 (main).
+Source revision: d6de02d27623383a4b09c163f7b9c5b22638b2cf (main).
