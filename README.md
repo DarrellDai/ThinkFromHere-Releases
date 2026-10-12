@@ -1,12 +1,12 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.11** · Android **0.3.11 (311)** · iOS **0.3.11 模拟器测试包**
+桌面版 **0.3.12** · Android **0.3.12 (312)** · iOS **0.3.12 模拟器测试包**
 
-## 本次更新（0.3.11）
+## 本次更新（0.3.12）
 
-- Agent 自动恢复、工作期间发送、语言和模型选择等偏好随账号跨设备同步，兼容旧设置迁移。
-- 整个通知设置区域仅保存在当前设备，新增统一提示并移除重复的音量说明。
-- 双击 Shift 打开搜索后立即聚焦输入框；同步版本接口不可用时自动退回全量同步。
+- 修复同机开发版与正式版之间过期的 Codex 运行状态，核验执行记录后恢复真实结果。
+- 停止、追加消息和队列轮询前恢复已结束的本机会话，避免持续报执行电脑离线。
+- 恢复 App 断开后由后台完成的最终回复；保护仍在执行的任务，不把未确认的停止误报为成功。
 
 ## 上次更新（0.3.5）
 
@@ -103,7 +103,7 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.11 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.11)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.12 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.12)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
 - Android 使用固定 Release 签名和 versionCode 311，可覆盖升级同签名正式版；开发版独立安装。
