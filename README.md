@@ -1,12 +1,12 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.9** · Android **0.3.9 (309)** · iOS **0.3.9 模拟器测试包**
+桌面版 **0.3.11** · Android **0.3.11 (311)** · iOS **0.3.11 模拟器测试包**
 
-## 本次更新（0.3.9）
+## 本次更新（0.3.11）
 
-- 修复启动恢复后的中断状态未上传，避免云端继续显示运行中。
-- 保护本机执行中的任务，不被远端同步的启动中断错误意外停止。
-- 自动恢复仍需在执行电脑开启，并依赖退出时成功保存恢复记录；不保证断电或强制结束后的恢复。
+- Agent 自动恢复、工作期间发送、语言和模型选择等偏好随账号跨设备同步，兼容旧设置迁移。
+- 整个通知设置区域仅保存在当前设备，新增统一提示并移除重复的音量说明。
+- 双击 Shift 打开搜索后立即聚焦输入框；同步版本接口不可用时自动退回全量同步。
 
 ## 上次更新（0.3.5）
 
@@ -103,7 +103,7 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.9 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.9)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.11 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.11)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
 - Android 使用固定 Release 签名和 versionCode 309，可覆盖升级同签名正式版；开发版独立安装。
