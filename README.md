@@ -1,12 +1,12 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.8** · Android **0.3.8 (308)** · iOS **0.3.8 模拟器测试包**
+桌面版 **0.3.9** · Android **0.3.9 (309)** · iOS **0.3.9 模拟器测试包**
 
-## 本次更新（0.3.8）
+## 本次更新（0.3.9）
 
-- 按明确记录的图片修订关系展示最终图，保留独立图片。
-- 修复 Claude 当前回复及历史卡片的图片预览。
-- 完善图片输出指引与通知关闭按钮。
+- 修复启动恢复后的中断状态未上传，避免云端继续显示运行中。
+- 保护本机执行中的任务，不被远端同步的启动中断错误意外停止。
+- 自动恢复仍需在执行电脑开启，并依赖退出时成功保存恢复记录；不保证断电或强制结束后的恢复。
 
 ## 上次更新（0.3.5）
 
@@ -103,10 +103,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.8 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.8)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.9 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.9)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 308，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 309，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
