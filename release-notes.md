@@ -1,22 +1,20 @@
-## ThinkFromHere 0.3.9
+## ThinkFromHere 0.3.10
 
-- 修复启动恢复后的中断状态未上传：执行电脑确认任务被应用退出中断后，更新同步版本并上传正确状态，避免云端持续显示运行中。
-- 保护本机仍在执行的任务，不让其他设备同步来的“应用退出中断”错误覆盖实时输出或触发 Codex 停止；正常远程停止仍然有效。
-- 补充桌面与手机启动恢复、执行归属和同步回归测试。
-
-重启后自动继续任务仍需在执行电脑的设置中开启，且依赖退出时成功保存恢复记录；本版不保证断电或强制结束进程后的自动恢复，也不会自动重新启动已中断的历史任务。
+- 同步版本查询接口不可用时自动退回全量同步，五分钟后重试，避免旧中转接口返回 Not found 导致同步中断；鉴权和网络错误仍正常报告。
+- 双击 Shift 打开搜索后立即聚焦输入框，可直接输入。
+- 修复本地文件夹链接打开及错误提示，支持远程文件夹打包 ZIP 传输。
+- 修复停止后未消费的追加消息在新卡片继续执行，并在活动回复旁展示用户提问。
 
 ## English
 
-- Synchronize locally confirmed startup interruptions with a fresh revision so cloud views no longer remain stuck on running.
-- Prevent startup-interruption errors synced from another device from overwriting live local output or stopping Codex; explicit remote Stop remains supported.
-- Extend regression coverage for startup recovery, local execution ownership, and synchronization.
-
-Automatic task resumption must be enabled on the execution computer and requires a recovery record saved on exit. This release does not guarantee recovery after power loss or forced termination, and does not automatically restart historical interrupted tasks.
+- Fall back to full synchronization when the revision endpoint is unavailable, then retry after five minutes. Authentication and network failures remain visible.
+- Focus the search input immediately after opening search with a double tap of Shift.
+- Fix local folder links and path errors, and transfer remote folders as ZIP archives.
+- Continue unconsumed follow-ups on new cards after stopping, and show user prompts alongside activity replies.
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: 6d21af663249efd15ec6c444e4a87f6b45ad77ed (main).
+Source revision: 4febbe34201f58b9bb6e4686f28fbe0be1e70f97 (main).
