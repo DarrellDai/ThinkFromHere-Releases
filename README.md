@@ -106,7 +106,7 @@
 [打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.11 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.11)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 309，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 311，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
