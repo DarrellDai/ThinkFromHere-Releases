@@ -1,13 +1,13 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.13** · Android **0.3.13 (313)** · iOS **0.3.13 模拟器测试包**
+桌面版 **0.3.14** · Android **0.3.14 (314)** · iOS **0.3.14 模拟器测试包**
 
-## 本次更新（0.3.13）
+## 本次更新（0.3.14）
 
-- 优化已有 Codex 会话浏览：详情按需读取、分页显示，大会话无需先加载全部记录。
-- 会话列表接近底部时自动加载后续会话，并显示加载状态，保持滚动位置。
-- 读取和导入增加进度提示、记录计数与耗时；详情统一使用单一滚动区域。
-- 简化会话导入提示，并以 SVG 图标替换依赖字体的界面符号。
+- Agent 运行状态改为蓝色虚线卡片边框，选中时仍保持可见；移除 Agent running 文字，预览图同步显示蓝色。
+- 权限和推理强度选择器在选项列表中显示图标，改善键盘和触屏选择体验，并为常用工具恢复彩色图标。
+- 改善大型 Codex 会话的历史读取与分支，超大消息帧断开后自动重连。
+- 点击标记卡片列表外侧即可关闭列表。
 
 ## 上次更新（0.3.5）
 
@@ -104,7 +104,7 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.13 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.13)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.14 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.14)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
 - Android 使用固定 Release 签名和 versionCode 313，可覆盖升级同签名正式版；开发版独立安装。
