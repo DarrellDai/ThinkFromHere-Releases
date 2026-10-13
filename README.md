@@ -1,12 +1,13 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.12** · Android **0.3.12 (312)** · iOS **0.3.12 模拟器测试包**
+桌面版 **0.3.13** · Android **0.3.13 (313)** · iOS **0.3.13 模拟器测试包**
 
-## 本次更新（0.3.12）
+## 本次更新（0.3.13）
 
-- 修复同机开发版与正式版之间过期的 Codex 运行状态，核验执行记录后恢复真实结果。
-- 停止、追加消息和队列轮询前恢复已结束的本机会话，避免持续报执行电脑离线。
-- 恢复 App 断开后由后台完成的最终回复；保护仍在执行的任务，不把未确认的停止误报为成功。
+- 优化已有 Codex 会话浏览：详情按需读取、分页显示，大会话无需先加载全部记录。
+- 会话列表接近底部时自动加载后续会话，并显示加载状态，保持滚动位置。
+- 读取和导入增加进度提示、记录计数与耗时；详情统一使用单一滚动区域。
+- 简化会话导入提示，并以 SVG 图标替换依赖字体的界面符号。
 
 ## 上次更新（0.3.5）
 
@@ -103,10 +104,10 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.12 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.12)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.13 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.13)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
-- Android 使用固定 Release 签名和 versionCode 311，可覆盖升级同签名正式版；开发版独立安装。
+- Android 使用固定 Release 签名和 versionCode 313，可覆盖升级同签名正式版；开发版独立安装。
 - iOS ZIP 仅用于 macOS 的 iOS Simulator，不能安装到 iPhone 或 iPad 真机。
 
 ## 上次更新（Desktop 0.1.52 / Mobile 0.1.44）
