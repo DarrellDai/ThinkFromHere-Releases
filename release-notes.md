@@ -1,20 +1,20 @@
-## ThinkFromHere 0.3.13
+## ThinkFromHere 0.3.14
 
-- 优化已有 Codex 会话浏览：详情按需读取、分页显示，大会话无需先加载全部记录。
-- 会话列表接近底部时自动加载后续会话，并显示加载状态，保持滚动位置。
-- 读取和导入增加进度提示、记录计数与耗时；详情统一使用单一滚动区域。
-- 简化会话导入提示，并以 SVG 图标替换依赖字体的界面符号。
+- Agent 运行状态改为蓝色虚线卡片边框，选中时仍保持可见；移除 Agent running 文字，预览图同步显示蓝色。
+- 权限和推理强度选择器在选项列表中显示图标，改善键盘和触屏选择体验，并为常用工具恢复彩色图标。
+- 改善大型 Codex 会话的历史读取与分支，超大消息帧断开后自动重连。
+- 点击标记卡片列表外侧即可关闭列表。
 
 ## English
 
-- Load existing Codex session previews on demand and render history in pages for faster browsing of large sessions.
-- Automatically load older sessions near the bottom of the list, with loading feedback and preserved scroll position.
-- Show history and import progress, record counts, and elapsed time; use one scrolling area in session details.
-- Simplify session import notices and replace font-dependent interface symbols with SVG icons.
+- Indicate running agents with blue dashed card borders that remain visible when selected, replacing the Agent running label; match the minimap color.
+- Show icons in permission and reasoning effort options, with keyboard and touch support and colored tool icons.
+- Improve large Codex history reads and forks, and reconnect after oversized message frames.
+- Dismiss the flagged cards list by clicking its backdrop.
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: 607117b98b646958b561b6c916daa03468342bb6 (main).
+Source revision: df418e36b61bbc8ff3e48e1610c4b416c4ddbaef (main).
