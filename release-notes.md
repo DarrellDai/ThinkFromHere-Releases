@@ -1,18 +1,20 @@
-## ThinkFromHere 0.3.12
+## ThinkFromHere 0.3.13
 
-- 修复同机开发版与正式版之间的 Codex 会话状态恢复：执行端退出后，另一实例不再一直显示过期的“生成中”。
-- 停止、追加消息和队列轮询前核验本机执行记录，避免把已结束的本地会话继续路由给离线实例。
-- 从经过核验的本地线程记录恢复断开后完成的最终回复；仍在执行的任务不会被接管，未确认的停止不会被误报为成功。
+- 优化已有 Codex 会话浏览：详情按需读取、分页显示，大会话无需先加载全部记录。
+- 会话列表接近底部时自动加载后续会话，并显示加载状态，保持滚动位置。
+- 读取和导入增加进度提示、记录计数与耗时；详情统一使用单一滚动区域。
+- 简化会话导入提示，并以 SVG 图标替换依赖字体的界面符号。
 
 ## English
 
-- Recover stale Codex conversation states across development and release instances on the same computer.
-- Reconcile verified local execution records before stopping, adding live input, or polling queued messages.
-- Restore final replies completed after the owning app disconnected, without taking over active tasks or reporting an unconfirmed stop as successful.
+- Load existing Codex session previews on demand and render history in pages for faster browsing of large sessions.
+- Automatically load older sessions near the bottom of the list, with loading feedback and preserved scroll position.
+- Show history and import progress, record counts, and elapsed time; use one scrolling area in session details.
+- Simplify session import notices and replace font-dependent interface symbols with SVG icons.
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: cc7740f2a5ee6eb60177319957dd26474e868e1b (main).
+Source revision: e1e04c1e07463aa967979285bf8bdfc7637024ec (main).
