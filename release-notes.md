@@ -1,22 +1,22 @@
-## ThinkFromHere 0.4.2
+## ThinkFromHere 0.4.3
 
-- Activity 合并 Flag 标记，支持全部、未读、Flag 和进行中筛选；左侧显示未读紫点，右侧显示旗帜；入口新增红色 Flag 与紫色未读数量角标，为零时隐藏。
-- 电脑端左键双击切换已读状态、右键双击切换 Flag；手机右滑切换已读状态、左滑切换 Flag。
-- 优化手机和平板边缘滑动导航、画布双击关闭详情、详情尺寸调整和紧凑布局。
-- 删除卡片保留 30 秒撤销窗口，之后清理对应的本地历史；改善分支会话的独立保存。
-- 修复远程文件位置检查、文件传输及节点拆解时的模型回退。
+- Activity 中的 Flag 改为实心红旗。
+- 改善手机边缘滑动、输入区滑动、详情关闭动画，修复关闭详情时侧边栏闪现。
+- 展开屏支持调整画布列表大小和拖动列表，优化列表开关动画。
+- 澄清问题的回答显示在卡片提示下方。
+- 修复 Agent 卡片拆解时的连接选择；持久保存任务恢复检查点，并在重启恢复前确认任务结果。
 
 ## English
 
-- Consolidate flags into Activity, with All, Unread, Flag, and In progress filters. Unread dots stay on the left and flags on the right. Activity entry icons show red flag counts and purple unread counts, hiding zero counts.
-- Double left-click to toggle read status and double right-click to toggle flags on desktop. Swipe right for read status and left for flags on mobile.
-- Improve edge-swipe navigation, double-tap dismissal of details on tablets, detail resizing, and compact layouts.
-- Keep a 30-second undo window before cleaning up deleted cards' local history, with improved independent branch sessions.
-- Fix remote file location checks, file transfers, and model fallback for node decomposition.
+- Use solid red flags in Activity.
+- Improve mobile edge and composer swipes, detail dismissal animations, and sidebar stability.
+- Support resizing and dragging canvas lists on unfolded screens, with smoother list transitions.
+- Show clarification answers below card prompts.
+- Use the current agent connection for card decomposition, persist recovery checkpoints, and verify task outcomes before restart recovery.
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: 76b23c3bc68698138e7e13990db9ccbc28de681c (main).
+Source revision: d345e136305fd77e18ca72aba97055aeb70736a2 (main).
