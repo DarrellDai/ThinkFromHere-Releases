@@ -1,6 +1,6 @@
 ## ThinkFromHere 0.4.2
 
-- Activity 合并 Flag 标记，支持全部、未读、Flag 和进行中筛选；左侧显示未读紫点，右侧显示旗帜。
+- Activity 合并 Flag 标记，支持全部、未读、Flag 和进行中筛选；左侧显示未读紫点，右侧显示旗帜；入口新增红色 Flag 与紫色未读数量角标，为零时隐藏。
 - 电脑端左键双击切换已读状态、右键双击切换 Flag；手机右滑切换已读状态、左滑切换 Flag。
 - 优化手机和平板边缘滑动导航、画布双击关闭详情、详情尺寸调整和紧凑布局。
 - 删除卡片保留 30 秒撤销窗口，之后清理对应的本地历史；改善分支会话的独立保存。
@@ -8,7 +8,7 @@
 
 ## English
 
-- Consolidate flags into Activity, with All, Unread, Flag, and In progress filters. Unread dots stay on the left and flags on the right.
+- Consolidate flags into Activity, with All, Unread, Flag, and In progress filters. Unread dots stay on the left and flags on the right. Activity entry icons show red flag counts and purple unread counts, hiding zero counts.
 - Double left-click to toggle read status and double right-click to toggle flags on desktop. Swipe right for read status and left for flags on mobile.
 - Improve edge-swipe navigation, double-tap dismissal of details on tablets, detail resizing, and compact layouts.
 - Keep a 30-second undo window before cleaning up deleted cards' local history, with improved independent branch sessions.
@@ -19,4 +19,4 @@ iOS ZIP 仅适用于模拟器，不是真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: 68948c5e9fe173984eed68cce68d0ee0e948b129 (main).
+Source revision: 76b23c3bc68698138e7e13990db9ccbc28de681c (main).
