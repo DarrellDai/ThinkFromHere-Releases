@@ -1,8 +1,17 @@
 # ThinkFromHere Downloads
 
-桌面版 **0.3.14** · Android **0.3.14 (314)** · iOS **0.3.14 模拟器测试包**
+桌面版 **0.4.0** · Android **0.4.0 (400)** · iOS **0.4.0 模拟器测试包**
 
-## 本次更新（0.3.14）
+## 本次更新（0.4.0）
+
+- Codex、Claude Code 与普通聊天使用按来源节点和版本管理的分支记忆；分叉不携带后续节点或兄弟分支的记忆。
+- 修正和遗忘只影响当前分支；关闭 App 会话中的原生共享自动记忆，每轮刷新所选分支快照。
+- 核验会话末端后复用线性续聊，历史节点使用精确分叉；记忆开关变化时刷新配置。
+- 输入框跟随阅读卡片，Activity 新回复置顶，缩略图支持点击定位，用户消息以纯文本显示。
+
+遗忘不会删除已有聊天文字或回滚共享文件。建议电脑与手机同步升级。
+
+## 上次更新（0.3.14）
 
 - Agent 运行状态改为蓝色虚线卡片边框，选中时仍保持可见；移除 Agent running 文字，预览图同步显示蓝色。
 - 权限和推理强度选择器在选项列表中显示图标，改善键盘和触屏选择体验，并为常用工具恢复彩色图标。
@@ -104,7 +113,7 @@
 
 ## 下载与升级
 
-[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.3.14 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.3.14)
+[打开下载页](https://www.thinkfromhere.ai/downloads/) · [v0.4.0 发布页](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.4.0)
 
 - Windows x64、macOS universal、Linux x64、Android：下载对应安装包及同名 SHA-256 校验文件。
 - Android 使用固定 Release 签名和 versionCode 313，可覆盖升级同签名正式版；开发版独立安装。
