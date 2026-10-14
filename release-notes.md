@@ -1,20 +1,24 @@
-## ThinkFromHere 0.3.14
+## ThinkFromHere 0.4.0
 
-- Agent 运行状态改为蓝色虚线卡片边框，选中时仍保持可见；移除 Agent running 文字，预览图同步显示蓝色。
-- 权限和推理强度选择器在选项列表中显示图标，改善键盘和触屏选择体验，并为常用工具恢复彩色图标。
-- 改善大型 Codex 会话的历史读取与分支，超大消息帧断开后自动重连。
-- 点击标记卡片列表外侧即可关闭列表。
+- 分支长期记忆支持来源节点与版本追踪；修正和遗忘只影响当前分支，分叉只继承所选节点之前的记忆，不带入后续节点或兄弟分支。
+- Codex 与 Claude Code 接入分支记忆，并关闭 App 会话中的原生共享自动记忆；每轮刷新当前分支的记忆快照。
+- 改善 Codex、Claude 的线性续聊与历史节点分叉，核验会话末端后复用已有会话；记忆开关变化时刷新会话配置。
+- 输入框跟随正在阅读的卡片；Activity 新回复保持在顶部；画布缩略图支持点击和轻触定位；用户消息按纯文本显示。
+
+遗忘长期记忆不会删除已有聊天文字，也不会回滚工作目录中的文件。建议电脑与手机同步升级。
 
 ## English
 
-- Indicate running agents with blue dashed card borders that remain visible when selected, replacing the Agent running label; match the minimap color.
-- Show icons in permission and reasoning effort options, with keyboard and touch support and colored tool icons.
-- Improve large Codex history reads and forks, and reconnect after oversized message frames.
-- Dismiss the flagged cards list by clicking its backdrop.
+- Versioned branch memory inherits only the selected ancestor path. Corrections and forgetting stay within the current branch, excluding later turns and sibling branches.
+- Codex and Claude Code use the same branch memory with fresh context on each turn; native shared automatic memory is disabled for app sessions.
+- Reuse verified session tips for linear continuations and fork historical checkpoints; refresh configuration when memory settings change.
+- Keep the composer aligned with the selected card, place new Activity replies first, support click/tap minimap navigation, and render user messages as plain text.
+
+Forgetting long-term memory does not erase existing chat history or restore workspace files. Update desktop and mobile together.
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是 iPhone 真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: df418e36b61bbc8ff3e48e1610c4b416c4ddbaef (main).
+Source revision: 5f1bcd33766fe178d8fd4ff26de63c889a1d5a6b (main).
