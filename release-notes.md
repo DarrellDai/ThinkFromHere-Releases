@@ -5,10 +5,11 @@
 - 改善远程消息交接期间的排队、追加、停止和取消，保留未发送草稿，并及时清理已提交的输入。
 - 排队消息可转为追加，简化历史卡片导航和设置状态提示。
 - 修复运行时云配置失败后的 Codex 重连。
+- 滚动详情时选中可见面积最大的卡片，改善滚轮切换选择。
 
 包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包及 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是真机安装包。
 
 Download: https://www.thinkfromhere.ai/downloads/
 
-Source revision: b0eb5fee63aaa2a113d398b2cc3c6272d9127944.
+Source revision: 4a48601caa44970e700c5a7bad754fbf41dfc96c.
