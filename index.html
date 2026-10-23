@@ -388,14 +388,14 @@
             </div>
           </article>
 
-          <article class="platform-card available" data-platform="macos">
+          <article class="platform-card available" data-platform="macos-x64">
             <div class="platform-icon" aria-hidden="true">MAC</div>
             <div class="platform-content">
               <div class="platform-heading">
-                <h3>macOS</h3>
+                <h3>macOS · x86-64</h3>
                 <span class="status">v0.4.8</span>
               </div>
-              <p class="platform-description">Intel 与 Apple 芯片 · Universal DMG</p>
+              <p class="platform-description">Intel · x86-64 · 当前提供兼容的 Universal DMG</p>
               <a
                 class="download"
                 href="https://www.thinkfromhere.ai/releases/download/v0.4.8/ThinkFromHere-0.4.8-macos-universal.dmg"
@@ -412,14 +412,38 @@
             </div>
           </article>
 
-          <article class="platform-card available" data-platform="linux">
+          <article class="platform-card available" data-platform="macos-arm64">
+            <div class="platform-icon" aria-hidden="true">MAC</div>
+            <div class="platform-content">
+              <div class="platform-heading">
+                <h3>macOS · ARM64</h3>
+                <span class="status">v0.4.8</span>
+              </div>
+              <p class="platform-description">Apple Silicon · ARM64 · 当前提供兼容的 Universal DMG</p>
+              <a
+                class="download"
+                href="https://www.thinkfromhere.ai/releases/download/v0.4.8/ThinkFromHere-0.4.8-macos-universal.dmg"
+                download="ThinkFromHere-0.4.8-macos-universal.dmg"
+              >
+                下载 macOS 安装包
+              </a>
+              <a
+                class="checksum-link"
+                href="https://www.thinkfromhere.ai/releases/download/v0.4.8/ThinkFromHere-0.4.8-macos-universal.dmg.sha256"
+              >
+                SHA-256 校验文件
+              </a>
+            </div>
+          </article>
+
+          <article class="platform-card available" data-platform="linux-x64">
             <div class="platform-icon" aria-hidden="true">DEB</div>
             <div class="platform-content">
               <div class="platform-heading">
-                <h3>Linux</h3>
+                <h3>Linux · x86-64</h3>
                 <span class="status">v0.4.8</span>
               </div>
-              <p class="platform-description">Debian / Ubuntu / Mint · x64 · DEB</p>
+              <p class="platform-description">Debian / Ubuntu / Mint · x86-64 · DEB</p>
               <a
                 class="download"
                 href="https://www.thinkfromhere.ai/releases/download/v0.4.8/ThinkFromHere-0.4.8-linux-amd64.deb"
@@ -430,6 +454,27 @@
               <a
                 class="checksum-link"
                 href="https://www.thinkfromhere.ai/releases/download/v0.4.8/ThinkFromHere-0.4.8-linux-amd64.deb.sha256"
+              >
+                SHA-256 校验文件
+              </a>
+            </div>
+          </article>
+
+          <article class="platform-card available" data-platform="linux-arm64">
+            <div class="platform-icon" aria-hidden="true">DEB</div>
+            <div class="platform-content">
+              <div class="platform-heading">
+                <h3>Linux · ARM64</h3>
+                <span class="status">暂未发布</span>
+              </div>
+              <p class="platform-description">Debian / Ubuntu / Mint · ARM64 · DEB</p>
+              <a
+                class="download" aria-disabled="true"
+              >
+                下载 Linux 安装包
+              </a>
+              <a
+                class="checksum-link" hidden
               >
                 SHA-256 校验文件
               </a>
@@ -530,8 +575,10 @@
           "https://www.thinkfromhere.ai/updates/latest.json";
         const patterns = {
           windows: /^ThinkFromHere-(\d+\.\d+\.\d+)-windows-x64\.exe$/,
-          macos: /^ThinkFromHere-(\d+\.\d+\.\d+)-macos-universal\.dmg$/,
-          linux: /^ThinkFromHere-(\d+\.\d+\.\d+)-linux-amd64\.deb$/,
+          "macos-x64": /^ThinkFromHere-(\d+\.\d+\.\d+)-macos-x64\.dmg$/,
+          "macos-arm64": /^ThinkFromHere-(\d+\.\d+\.\d+)-macos-arm64\.dmg$/,
+          "linux-x64": /^ThinkFromHere-(\d+\.\d+\.\d+)-linux-amd64\.deb$/,
+          "linux-arm64": /^ThinkFromHere-(\d+\.\d+\.\d+)-linux-arm64\.deb$/,
           android: /^ThinkFromHere-(\d+\.\d+\.\d+)-android\.apk$/,
           ios: /^ThinkFromHere-(\d+\.\d+\.\d+)-ios-simulator\.zip$/,
         };
@@ -557,6 +604,9 @@
                   typeof candidate.name === "string" && pattern.test(candidate.name),
               );
               if (!asset) return;
+              if (platform.startsWith("macos-")) {
+                card.querySelector(".platform-description").textContent = platform.endsWith("x64") ? "Intel · x86-64 · DMG" : "Apple Silicon · ARM64 · DMG";
+              }
               const version = pattern.exec(asset.name)?.[1];
               const download = card.querySelector(".download");
               const status = card.querySelector(".status");
@@ -566,10 +616,12 @@
               );
               if (status && version) status.textContent = `v${version}`;
               if (download) {
+                download.removeAttribute("aria-disabled");
                 download.href = asset.browser_download_url;
                 download.download = asset.name;
               }
               if (checksum && checksumAsset) {
+                checksum.hidden = false;
                 checksum.href = checksumAsset.browser_download_url;
               }
             });

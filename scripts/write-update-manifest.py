@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 REPO_URL = 'https://github.com/DarrellDai/ThinkFromHere-Releases'
-SUFFIXES = ('windows-x64.exe', 'macos-universal.dmg', 'linux-amd64.deb',
+SUFFIXES = ('windows-x64.exe', 'macos-x64.dmg', 'macos-arm64.dmg', 'linux-arm64.deb', 'linux-arm64.tar.gz', 'linux-amd64.deb',
             'linux-x64.tar.gz', 'android.apk', 'ios-simulator.zip')
 
 

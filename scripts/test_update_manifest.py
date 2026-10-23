@@ -22,7 +22,7 @@ class ManifestTests(unittest.TestCase):
 
     def test_complete_release(self):
         result = module.manifest(self.release)
-        self.assertEqual(len(result['assets']), 12)
+        self.assertEqual(len(result['assets']), 18)
         self.assertNotIn('state', result['assets'][0])
         self.assertEqual(result['tag_name'], 'v1.2.3')
 
