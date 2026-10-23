@@ -1,16 +1,14 @@
-## ThinkFromHere 0.4.12
+## ThinkFromHere 0.4.14
 
-- 文件传输期间检测执行电脑离线或重启，避免长时间停在准备 0%，并提供明确的重试提示。
-- 下载进度独立显示，已下载文件增加标记。
-- 改善远程消息交接期间的排队、追加、停止和取消，保留未发送草稿，并及时清理已提交的输入。
-- 排队消息可转为追加，简化历史卡片导航和设置状态提示。
-- 修复运行时云配置失败后的 Codex 重连，以及续接子节点绑定前的进度处理。
-- 滚动详情时选中可见面积最大的卡片，并修复滚动边界选择。
-- 简化详情导航为跳到父节点；活动列表支持未读/标记项导航与渐隐高亮。
+- Activity 增加搜索，可搜索画布名称、提问和回复，并与未读、Flag、进行中筛选组合使用。
+- 有未读动态时突出显示“全部标为已读”操作。
+- 修复生成文件的操作菜单被卡片底部截断的问题，完善图片文件名预览和下载交互。
+- 改善详情阅读控件、侧栏与详情拖动调整，以及远程问题刷新时的焦点保留。
+- macOS 和 Linux 分别提供 x64、ARM64 安装包。
 
-包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包及 SHA-256 校验文件。
+包含 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64（deb、tar.gz）、Android APK 和 iOS 模拟器 ZIP，共九种安装包及对应 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是真机安装包。
 
-Download: https://www.thinkfromhere.ai/downloads/
+下载：https://www.thinkfromhere.ai/downloads/
 
-Source revision: 07717c71f07c43bd021beb97be47720862dd1278.
+Source revision: 368283b8baee9439aba14851d88a4c02f69a3b99。
