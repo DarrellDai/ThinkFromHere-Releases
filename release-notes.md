@@ -1,15 +1,15 @@
-## ThinkFromHere 0.4.15
+## ThinkFromHere 0.4.16
 
-- 手机和 iPad 打开 Activity 时不再自动聚焦搜索框，避免弹出键盘。
-- Side chat 展开时再次点击入口即可关闭，优化入口样式。
-- 首条消息发送失败后保留草稿，并在已创建的画布中重试。
-- 改善 Codex 和 Claude 插件搜索、安装与管理。
-- 统一手机和平板的远程模型菜单，支持仅含图片的排队消息和追加输入。
-- 保留鼠标滚轮缩放，同时支持触控板平移。
+- 统一卡片详情顶部六个按钮的尺寸、间距和对齐，改进未读状态显示。
+- 改善 iPad 安全区域、文件保存与图片预览，键盘弹出时保持侧栏位置。
+- 保留 Activity 阅读位置，关闭搜索或切换画布后清空搜索条件。
+- 桌面端支持 Codex / Claude 完成对话后后台抽取分支记忆，并显示处理状态和来源。
+- 改善移动端同步、远程附件预览和通知声音播放。
+- 加入 iOS APNs 推送接入代码；真机推送仍需服务端与 Apple 签名配置。
 
 包含 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64（deb、tar.gz）、Android APK 和 iOS 模拟器 ZIP，共九种安装包及对应 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是真机安装包。
 
 下载：https://www.thinkfromhere.ai/downloads/
 
-Source revision: 57c3e0cf9be1ddbfbeb92390c190d7ff4b4234b2。
+Source revision: 069144af8b36beef75d52c4a402b6d47474e6f15。
