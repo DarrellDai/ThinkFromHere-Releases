@@ -1,22 +1,15 @@
-## ThinkFromHere 0.4.8
+## ThinkFromHere 0.4.16
 
-- 恢复 Codex 运行中的实时进度与活动记录，避免历史状态覆盖当前任务状态。
-- 支持将 Claude 会话历史导入分支画布，导入历史不再自动标为未读。
-- 远程文件展示准备和下载进度，Android 文件预览使用原生流式下载。
-- 记住 Agent 的 Fast、推理强度和权限偏好。
-- 改善 Android 后台返回时的登录保持、推送注册，以及 macOS 通知和恢复行为。
+- 统一卡片详情顶部六个按钮的尺寸、间距和对齐，改进未读状态显示。
+- 改善 iPad 安全区域、文件保存与图片预览，键盘弹出时保持侧栏位置。
+- 保留 Activity 阅读位置，关闭搜索或切换画布后清空搜索条件。
+- 桌面端支持 Codex / Claude 完成对话后后台抽取分支记忆，并显示处理状态和来源。
+- 改善移动端同步、远程附件预览和通知声音播放。
+- 加入 iOS APNs 推送接入代码；真机推送仍需服务端与 Apple 签名配置。
 
-## English
-
-- Restore live Codex progress and activity history; keep current execution state visible.
-- Import Claude session history into branching canvases without marking imported history unread.
-- Show remote file preparation and download progress, with native streaming previews on Android.
-- Remember Agent Fast, reasoning effort, and permission preferences.
-- Improve Android login persistence and push registration, and macOS notification and recovery behavior.
-
-包含 Windows x64、macOS universal、Linux deb/tar.gz、Android APK 和 iOS 模拟器包，以及 SHA-256 校验文件。
+包含 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64（deb、tar.gz）、Android APK 和 iOS 模拟器 ZIP，共九种安装包及对应 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是真机安装包。
 
-Download: https://www.thinkfromhere.ai/downloads/
+下载：https://www.thinkfromhere.ai/downloads/
 
-Source revision: 0c828a3af1ca537139a17dbbe48d34bcdd7c8534 (release/0.4.8).
+Source revision: 069144af8b36beef75d52c4a402b6d47474e6f15。

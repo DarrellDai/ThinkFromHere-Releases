@@ -26,6 +26,23 @@ class ManifestTests(unittest.TestCase):
         self.assertNotIn('state', result['assets'][0])
         self.assertEqual(result['tag_name'], 'v1.2.3')
 
+    def test_legacy_release_remains_supported(self):
+        tag = 'v0.4.13'
+        release = {'tag_name': tag, 'html_url': f'{module.REPO_URL}/releases/tag/{tag}', 'assets': []}
+        for suffix in module.LEGACY_SUFFIXES:
+            for ending in ('', '.sha256'):
+                name = f'ThinkFromHere-0.4.13-{suffix}{ending}'
+                release['assets'].append({'name': name, 'size': 123, 'state': 'uploaded',
+                    'browser_download_url': f'{module.REPO_URL}/releases/download/{tag}/{name}'})
+        self.assertEqual(len(module.manifest(release)['assets']), 12)
+
+    def test_every_new_architecture_is_required(self):
+        for asset in self.release['assets']:
+            release = copy.deepcopy(self.release)
+            release['assets'] = [item for item in release['assets'] if item['name'] != asset['name']]
+            with self.subTest(asset=asset['name']), self.assertRaises(ValueError):
+                module.manifest(release)
+
     def test_incomplete_release_cannot_replace_feed(self):
         self.release['assets'].pop()
         with self.assertRaises(ValueError):

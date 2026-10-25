@@ -5,8 +5,11 @@ import sys
 from pathlib import Path
 
 REPO_URL = 'https://github.com/DarrellDai/ThinkFromHere-Releases'
-SUFFIXES = ('windows-x64.exe', 'macos-x64.dmg', 'macos-arm64.dmg', 'linux-arm64.deb', 'linux-arm64.tar.gz', 'linux-amd64.deb',
+LEGACY_SUFFIXES = ('windows-x64.exe', 'macos-universal.dmg', 'linux-amd64.deb',
             'linux-x64.tar.gz', 'android.apk', 'ios-simulator.zip')
+SUFFIXES = ('windows-x64.exe', 'macos-x64.dmg', 'macos-arm64.dmg',
+            'linux-amd64.deb', 'linux-x64.tar.gz', 'linux-arm64.deb',
+            'linux-arm64.tar.gz', 'android.apk', 'ios-simulator.zip')
 
 
 def manifest(release):
@@ -15,7 +18,8 @@ def manifest(release):
         raise ValueError('Expected a published stable release')
     if release.get('html_url') != f'{REPO_URL}/releases/tag/{tag}':
         raise ValueError('Unexpected release URL')
-    packages = {f'ThinkFromHere-{tag[1:]}-{suffix}' for suffix in SUFFIXES}
+    suffixes = SUFFIXES if tuple(map(int, tag[1:].split('.'))) >= (0, 4, 14) else LEGACY_SUFFIXES
+    packages = {f'ThinkFromHere-{tag[1:]}-{suffix}' for suffix in suffixes}
     expected = packages | {name + '.sha256' for name in packages}
     assets = []
     seen = set()
@@ -34,7 +38,7 @@ def manifest(release):
             raise ValueError('Unexpected asset URL')
         assets.append({'name': name, 'size': size, 'browser_download_url': url})
     if seen != expected:
-        raise ValueError('Release must contain all six installers and their SHA-256 files')
+        raise ValueError('Release must contain all platform installers and their SHA-256 files')
     return {'schema_version': 1, 'tag_name': tag, 'html_url': release['html_url'],
             'assets': sorted(assets, key=lambda asset: asset['name'])}
 

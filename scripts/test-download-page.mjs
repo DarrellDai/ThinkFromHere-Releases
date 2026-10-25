@@ -41,24 +41,20 @@ test('one card per system switches installer and checksum together in both direc
   }
 })
 
-test('failed refresh keeps architecture-specific fallback and disables unavailable ARM Linux', async () => {
+test('failed refresh keeps the current architecture-specific fallback links', async () => {
   const cards = fixture([], true)
   await new Promise(resolve => setImmediate(resolve))
   for (const card of cards) {
-    const select = card.elements['.architecture-select']
-    select.value = 'arm64'
-    select.change()
-    if (card.dataset.platform === 'linux') {
-      assert.equal(card.elements['.download'].href, undefined)
-      assert.equal(card.elements['.download']['aria-disabled'], 'true')
-      assert.equal(card.elements['.checksum-link'].hidden, true)
-    } else {
-      assert.ok(card.elements['.download'].href.endsWith('macos-universal.dmg'))
+    for (const arch of ['arm64', 'x64']) {
+      const select = card.elements['.architecture-select']
+      select.value = arch
+      select.change()
+      const download = card.elements['.download']
+      assert.ok(download.href.endsWith(suffixes[`${card.dataset.platform}-${arch}`]))
+      assert.ok(download.href.includes('/v0.4.16/'))
+      assert.equal(card.elements['.checksum-link'].href, download.href + '.sha256')
+      assert.equal(download['aria-disabled'], undefined)
     }
-    select.value = 'x64'
-    select.change()
-    assert.ok(card.elements['.download'].href)
-    assert.equal(card.elements['.download']['aria-disabled'], undefined)
   }
 })
 

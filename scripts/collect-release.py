@@ -11,8 +11,9 @@ from pathlib import Path
 version = os.environ['RELEASE_VERSION']
 if not re.fullmatch(r'\d+\.\d+\.\d+', version):
     raise ValueError('Invalid version')
-suffixes = ['windows-x64.exe', 'macos-x64.dmg', 'macos-arm64.dmg', 'linux-arm64.deb', 'linux-arm64.tar.gz', 'linux-amd64.deb',
-            'linux-x64.tar.gz', 'android.apk', 'ios-simulator.zip']
+suffixes = ['windows-x64.exe', 'macos-x64.dmg', 'macos-arm64.dmg',
+            'linux-amd64.deb', 'linux-x64.tar.gz', 'linux-arm64.deb',
+            'linux-arm64.tar.gz', 'android.apk', 'ios-simulator.zip']
 packages = {f'ThinkFromHere-{version}-{suffix}' for suffix in suffixes}
 expected = packages | {name + '.sha256' for name in packages}
 destination = Path('release')
