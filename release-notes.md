@@ -10,4 +10,4 @@ iOS ZIP 仅适用于模拟器，不是真机安装包。Android 后台运行不�
 
 下载：https://www.thinkfromhere.ai/downloads/
 
-Source revision: 8541d278cb6dc7888a8284d0bc23086b02e2640f。
+Source revision: bce0b5bf36d21f7d6851c1b6873124cb58cae874。
