@@ -1,15 +1,13 @@
-## ThinkFromHere 0.4.16
+## ThinkFromHere 0.5.0
 
-- 统一卡片详情顶部六个按钮的尺寸、间距和对齐，改进未读状态显示。
-- 改善 iPad 安全区域、文件保存与图片预览，键盘弹出时保持侧栏位置。
-- 保留 Activity 阅读位置，关闭搜索或切换画布后清空搜索条件。
-- 桌面端支持 Codex / Claude 完成对话后后台抽取分支记忆，并显示处理状态和来源。
-- 改善移动端同步、远程附件预览和通知声音播放。
-- 加入 iOS APNs 推送接入代码；真机推送仍需服务端与 Apple 签名配置。
+- 新增分层记忆与独立加密 Git 历史，分别配置 Chat 和 Agent 记忆；Agent 原生记忆默认保留，Beta 记忆按需开启。
+- 修复删除卡片后被发送缓存重新显示的问题，改进本地与远程任务停止确认、排队输入和发送目标稳定性。
+- 改善后台刷新时的画布导航、布局保存和流式内容显示，确保完成通知在最终内容更新后触发。
+- 改善 iOS / iPad 画布渲染与同步写入，优化触屏输入焦点和设置界面。
 
 包含 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64（deb、tar.gz）、Android APK 和 iOS 模拟器 ZIP，共九种安装包及对应 SHA-256 校验文件。
 iOS ZIP 仅适用于模拟器，不是真机安装包。
 
 下载：https://www.thinkfromhere.ai/downloads/
 
-Source revision: 069144af8b36beef75d52c4a402b6d47474e6f15。
+Source revision: 88c35604ddb41deadc8bd6bf4500a30fec4709b5。
