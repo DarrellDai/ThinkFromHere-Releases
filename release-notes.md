@@ -1,13 +1,13 @@
-## ThinkFromHere 0.5.0
+## ThinkFromHere 0.5.1
 
-- 新增分层记忆与独立加密 Git 历史，分别配置 Chat 和 Agent 记忆；Agent 原生记忆默认保留，Beta 记忆按需开启。
-- 修复删除卡片后被发送缓存重新显示的问题，改进本地与远程任务停止确认、排队输入和发送目标稳定性。
-- 改善后台刷新时的画布导航、布局保存和流式内容显示，确保完成通知在最终内容更新后触发。
-- 改善 iOS / iPad 画布渲染与同步写入，优化触屏输入焦点和设置界面。
+- 改善 Android Chat 后台运行和返回前台时的响应：生成期间启用前台服务，后台输出合并更新，避免逐片刷新拖慢页面。
+- 改善手机跨设备消息同步：优先上传新消息，历史附件补齐为新消息让路，删除记录同步失败时保留已确认的进度。
+- 修复 Codex 停止、完成和追加输入的竞态，限制流式界面的积压，改善停止按钮与账号切换的响应。
+- 改善 Activity 任务导航、通知显示时机、小窗口详情工具栏及面板滑动手势，并减少重复云端故障提醒。
 
 包含 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64（deb、tar.gz）、Android APK 和 iOS 模拟器 ZIP，共九种安装包及对应 SHA-256 校验文件。
-iOS ZIP 仅适用于模拟器，不是真机安装包。
+iOS ZIP 仅适用于模拟器，不是真机安装包。Android 后台运行不包含强制关闭 App 后继续生成。
 
 下载：https://www.thinkfromhere.ai/downloads/
 
-Source revision: 88c35604ddb41deadc8bd6bf4500a30fec4709b5。
+Source revision: 8541d278cb6dc7888a8284d0bc23086b02e2640f。
