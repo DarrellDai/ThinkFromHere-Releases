@@ -1,97 +1,97 @@
 {
   "schema_version": 1,
-  "tag_name": "v0.5.1",
-  "html_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.5.1",
+  "tag_name": "v0.5.2",
+  "html_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/tag/v0.5.2",
   "assets": [
     {
-      "name": "ThinkFromHere-0.5.1-android.apk",
-      "size": 27135823,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-android.apk"
+      "name": "ThinkFromHere-0.5.2-android.apk",
+      "size": 27136496,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-android.apk"
     },
     {
-      "name": "ThinkFromHere-0.5.1-android.apk.sha256",
+      "name": "ThinkFromHere-0.5.2-android.apk.sha256",
       "size": 98,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-android.apk.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-android.apk.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-ios-simulator.zip",
-      "size": 7235169,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-ios-simulator.zip"
+      "name": "ThinkFromHere-0.5.2-ios-simulator.zip",
+      "size": 7286752,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-ios-simulator.zip"
     },
     {
-      "name": "ThinkFromHere-0.5.1-ios-simulator.zip.sha256",
+      "name": "ThinkFromHere-0.5.2-ios-simulator.zip.sha256",
       "size": 104,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-ios-simulator.zip.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-ios-simulator.zip.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-amd64.deb",
-      "size": 213555012,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-amd64.deb"
+      "name": "ThinkFromHere-0.5.2-linux-amd64.deb",
+      "size": 213553656,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-amd64.deb"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-amd64.deb.sha256",
+      "name": "ThinkFromHere-0.5.2-linux-amd64.deb.sha256",
       "size": 102,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-amd64.deb.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-amd64.deb.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-arm64.deb",
-      "size": 204992944,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-arm64.deb"
+      "name": "ThinkFromHere-0.5.2-linux-arm64.deb",
+      "size": 204989072,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-arm64.deb"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-arm64.deb.sha256",
+      "name": "ThinkFromHere-0.5.2-linux-arm64.deb.sha256",
       "size": 102,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-arm64.deb.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-arm64.deb.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-arm64.tar.gz",
-      "size": 259094229,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-arm64.tar.gz"
+      "name": "ThinkFromHere-0.5.2-linux-arm64.tar.gz",
+      "size": 259093961,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-arm64.tar.gz"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-arm64.tar.gz.sha256",
+      "name": "ThinkFromHere-0.5.2-linux-arm64.tar.gz.sha256",
       "size": 105,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-arm64.tar.gz.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-arm64.tar.gz.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-x64.tar.gz",
-      "size": 259973861,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-x64.tar.gz"
+      "name": "ThinkFromHere-0.5.2-linux-x64.tar.gz",
+      "size": 259974025,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-x64.tar.gz"
     },
     {
-      "name": "ThinkFromHere-0.5.1-linux-x64.tar.gz.sha256",
+      "name": "ThinkFromHere-0.5.2-linux-x64.tar.gz.sha256",
       "size": 103,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-linux-x64.tar.gz.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-linux-x64.tar.gz.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-macos-arm64.dmg",
-      "size": 255485179,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-macos-arm64.dmg"
+      "name": "ThinkFromHere-0.5.2-macos-arm64.dmg",
+      "size": 255485255,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-macos-arm64.dmg"
     },
     {
-      "name": "ThinkFromHere-0.5.1-macos-arm64.dmg.sha256",
+      "name": "ThinkFromHere-0.5.2-macos-arm64.dmg.sha256",
       "size": 102,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-macos-arm64.dmg.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-macos-arm64.dmg.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-macos-x64.dmg",
-      "size": 262182144,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-macos-x64.dmg"
+      "name": "ThinkFromHere-0.5.2-macos-x64.dmg",
+      "size": 262182132,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-macos-x64.dmg"
     },
     {
-      "name": "ThinkFromHere-0.5.1-macos-x64.dmg.sha256",
+      "name": "ThinkFromHere-0.5.2-macos-x64.dmg.sha256",
       "size": 100,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-macos-x64.dmg.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-macos-x64.dmg.sha256"
     },
     {
-      "name": "ThinkFromHere-0.5.1-windows-x64.exe",
-      "size": 207494838,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-windows-x64.exe"
+      "name": "ThinkFromHere-0.5.2-windows-x64.exe",
+      "size": 207495205,
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-windows-x64.exe"
     },
     {
-      "name": "ThinkFromHere-0.5.1-windows-x64.exe.sha256",
+      "name": "ThinkFromHere-0.5.2-windows-x64.exe.sha256",
       "size": 102,
-      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.1/ThinkFromHere-0.5.1-windows-x64.exe.sha256"
+      "browser_download_url": "https://github.com/DarrellDai/ThinkFromHere-Releases/releases/download/v0.5.2/ThinkFromHere-0.5.2-windows-x64.exe.sha256"
     }
   ]
 }
