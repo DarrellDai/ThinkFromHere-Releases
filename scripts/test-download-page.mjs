@@ -4,6 +4,7 @@ import { runInNewContext } from 'node:vm'
 import test from 'node:test'
 
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8')
+const release = JSON.parse(await readFile(new URL('../updates/latest.json', import.meta.url), 'utf8'))
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1]
 const suffixes = { 'macos-x64': 'macos-x64.dmg', 'macos-arm64': 'macos-arm64.dmg', 'linux-x64': 'linux-amd64.deb', 'linux-arm64': 'linux-arm64.deb' }
 function fixture(assets, fail = false) {
@@ -51,7 +52,7 @@ test('failed refresh keeps the current architecture-specific fallback links', as
       select.change()
       const download = card.elements['.download']
       assert.ok(download.href.endsWith(suffixes[`${card.dataset.platform}-${arch}`]))
-      assert.ok(download.href.includes('/v0.4.16/'))
+      assert.ok(download.href.includes(`/${release.tag_name}/`))
       assert.equal(card.elements['.checksum-link'].href, download.href + '.sha256')
       assert.equal(download['aria-disabled'], undefined)
     }

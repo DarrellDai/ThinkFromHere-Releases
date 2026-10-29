@@ -1,11 +1,11 @@
-## ThinkFromHere 0.5.2
+修复与改进：
+- 修复电脑端后台、最小化窗口的通知等待绘制问题；前台绘制等待增加超时保护，迟到回执不再重复提醒。
+- 改进手机多账号后台同步与切换账号后的下载处理。
+- 改进模型选择菜单、模型名称与排序、高级模式及费用倍率显示。
+- 改进手机横屏、折叠屏输入布局、文件操作和 Markdown 阅读体验。
+- 修复 Agent 连接状态、模型刷新及 Claude CLI 参数兼容问题。
 
-- 改善 iOS 前台通知声音：使用原生音频播放，并修正原生插件方法类型。
-- 增加远程 Agent 提问的原生推送支持，区分问题提醒与完成提醒，并对过期或已处理的问题进行校验。
-- 更新 iOS 原生项目配置及文件下载后台处理。
+提供 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64、Android 安装包及 SHA-256 校验文件。
+iOS ZIP 仅用于模拟器，不可直接安装到 iPhone。
 
-包含 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64（deb、tar.gz）、Android APK 和 iOS 模拟器 ZIP，共九种安装包及对应 SHA-256 校验文件。
-iOS ZIP 仅适用于模拟器，不是真机安装包。远程问题推送需要服务端同步部署对应迁移和 push-dispatch 更新。
-
-下载：https://www.thinkfromhere.ai/downloads/
-Source revision: 98128c96b3cc295d12a4c29d5a0b1dd2fe7db846
+Source revision: 68fd9dc8f7761404c73d8ac98b49809350f910f3
