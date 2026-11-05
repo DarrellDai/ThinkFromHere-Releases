@@ -9,4 +9,4 @@
 提供 Windows x64、macOS Intel / Apple Silicon、Linux x64 / ARM64、Android 安装包及 SHA-256 校验文件。
 iOS ZIP 仅用于模拟器，不可直接安装到 iPhone。
 
-Source revision: 3a61730e4dc1bebe7c38a30c62486bdaafec2e28
+Source revision: 6507b03eae06d690bf257be196c4e7978eee8634
