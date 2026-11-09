@@ -260,7 +260,7 @@ iOS 当前仍提供未签名模拟器构建。
 
 ## 下载
 
-- [ThinkFromHere 下载站](https://darrelldai.github.io/ThinkFromHere-Releases/)
+- [ThinkFromHere 下载站](https://www.thinkfromhere.ai/downloads/)
 - [Latest Release](https://github.com/DarrellDai/ThinkFromHere-Releases/releases/latest)
 
 ## 安全提示
